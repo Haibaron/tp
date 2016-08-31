@@ -1,0 +1,36 @@
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/03-09/56e01a4088d3b.jpg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/01-13/5695b2f14616a.jpg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/01-13/5695c0873d865.png.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/01-13/5695c0d15fc5f.jpg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/01-13/5695bf6426994.jpg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-29T11:43:40+08:00 ] ::1 /tpshop2/index.php/Public/upload/goods/2016/01-13/5695bd0ba3d1d.jpg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
