@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/front.css'?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap-theme.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/front.css'?>" />
 
 </head>
 <body>
 <div class="container">
 	   <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/tpshop2/Public/img/logo.png'?>" />
+				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -27,10 +27,10 @@
 			<div class="col-md-3">
 			   
 			   <?php if($_SESSION['is_login']){ echo "欢迎回来".$_SESSION['username'];?>
-			   		  <a href="<?php echo U('Admin/Login/sign_out') ?>">退出</a>
+			   		  <a href="<?php echo U('Home/Login/sign_out') ?>">退出</a>
 			   		 <?php  }else{ ?>
-                     <a href="<?php echo U('Admin/Login/user_login') ?>">欢迎登陆</a>
-                     <a href="<?php echo U('Admin/Login/user_regedit') ?>">快速注册</a>
+                     <a href="<?php echo U('Home/Login/user_login') ?>">欢迎登陆</a>
+                     <a href="<?php echo U('Home/Login/user_regedit') ?>">快速注册</a>
 			   		 
 			  <?php
  } ?>
@@ -106,7 +106,7 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="/tpshop2/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>
 <script type="text/javascript">
 	
 	$(".table #checkall").click(function(){

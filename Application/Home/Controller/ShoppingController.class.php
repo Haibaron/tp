@@ -116,7 +116,7 @@ class ShoppingController extends Controller {
 		$this->assign('carts',$data);
 		$this->assign('addr',$addr);
 	}else{
-		$this->error('请登录账号',U('Admin/Login/user_login'));
+		$this->error('请登录账号',U('Home/Login/user_login'));
 	}
 		$this->display();
 	

@@ -24,7 +24,7 @@ class User_cartModel extends Model{
         }else{
         	//用户不存在cookie
         	$cartdata=isset($_COOKIE['cart'])?unserialize($_COOKIE['cart']):array();
-        	$key=$product_id;
+        	$key=I('post.product_id');
            
         	if($cartdata[$key]){
         		$cartdata[$key]+=$num;

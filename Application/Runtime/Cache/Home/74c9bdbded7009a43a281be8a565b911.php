@@ -3,16 +3,16 @@
 <head>
 	<title>自己的电商系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/front.css'?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap-theme.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/front.css'?>" />
 </head>
 <body>
 <div class="container">
     <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/tpshop2/Public/img/logo.png'?>" />
+				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -26,10 +26,10 @@
 			<div class="col-md-3">
 			   
 			   <?php if($_SESSION['is_login']){ echo "欢迎回来".$_SESSION['username'];?>
-			   		  <a href="<?php echo U('Admin/Login/sign_out') ?>">退出</a>
+			   		  <a href="<?php echo U('Home/Login/sign_out') ?>">退出</a>
 			   		 <?php  }else{ ?>
-                     <a href="<?php echo U('Admin/Login/user_login') ?>">欢迎登陆</a>
-                     <a href="<?php echo U('Admin/Login/user_regedit') ?>">快速注册</a>
+                     <a href="<?php echo U('Home/Login/user_login') ?>">欢迎登陆</a>
+                     <a href="<?php echo U('Home/Login/user_regedit') ?>">快速注册</a>
 			   		 
 			  <?php
  } ?>
@@ -63,10 +63,10 @@
 		 	<div class="col-md-9">
 		       <div class="slider-wrapper theme-default">
 		            <div id="slider" class="nivoSlider">
-		                <a href="#"><img src="<?= '/tpshop2/Public/upload/1.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '/tpshop2/Public/upload/2.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '/tpshop2/Public/upload/3.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '/tpshop2/Public/upload/4.jpg'?>"  /></a>
+		                <a href="#"><img src="<?= '/tp/Public/upload/1.jpg'?>"  /></a>
+		                <a href="#"><img src="<?php echo '/tp/Public/upload/2.jpg'?>"  /></a>
+		                <a href="#"><img src="<?php echo '/tp/Public/upload/3.jpg'?>"  /></a>
+		                <a href="#"><img src="<?php echo '/tp/Public/upload/4.jpg'?>"  /></a>
 		            </div>
 		        </div>
 			</div>
@@ -184,9 +184,9 @@
 		未经goodjobs.cn同意，不得转载网站之所有招聘信息及作品 新安人才网版权所有&copy;2000-2016
 		<br />皖ICP备12018891号 经营许可证：皖B2-20080016
 	</p>
-	<script type="text/javascript" src="/tpshop2/Public/js/jquery.js"></script>	
-	<script type="text/javascript" src="/tpshop2/Public/js/bootstrap.min.js "></script>
-	<script type="text/javascript" src="/tpshop2/Public/js/jquery.nivo.slider.pack.js"></script>
+	<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>	
+	<script type="text/javascript" src="/tp/Public/js/bootstrap.min.js "></script>
+	<script type="text/javascript" src="/tp/Public/js/jquery.nivo.slider.pack.js"></script>
 			
     <script type="text/javascript">
 	    $(function() {

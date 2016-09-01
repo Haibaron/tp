@@ -15,10 +15,10 @@
 			   
 			   <?php if($_SESSION['is_login']){  
 			   		 echo  "欢迎回来".$_SESSION['username'];?>
-			   		  <a href="<?php echo U('Admin/Login/sign_out') ?>">退出</a>
+			   		  <a href="<?php echo U('Home/Login/sign_out') ?>">退出</a>
 			   		 <?php  }else{ ?>
-                     <a href="<?php echo U('Admin/Login/user_login') ?>">欢迎登陆</a>
-                     <a href="<?php echo U('Admin/Login/user_regedit') ?>">快速注册</a>
+                     <a href="<?php echo U('Home/Login/user_login') ?>">欢迎登陆</a>
+                     <a href="<?php echo U('Home/Login/user_regedit') ?>">快速注册</a>
 			   		 
 			  <?php
 			    

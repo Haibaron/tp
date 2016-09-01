@@ -1,144 +1,128 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>INSPINIA | Dashboard v.4</title>
-
-    <link href="/tpshop2/Public/admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/tpshop2/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <title>后台管理</title>
+     <link href="/TP/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/TP/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Morris -->
-    <link href="/tpshop2/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/TP/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
-    <link href="/tpshop2/Public/admin/css/animate.css" rel="stylesheet">
-    <link href="/tpshop2/Public/admin/css/style.css" rel="stylesheet">
-
+    <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
 </head>
-
 <body>
-
-
-<!-- Copyright © 2005. Spidersoft Ltd -->
-<style>
-A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
-A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
-A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
-A.info:hover    {color:green;background:transparent;text-decoration:underline}
-</style>
-
-<!-- /Copyright © 2005. Spidersoft Ltd -->
-
-
     <div id="wrapper">
-    <nav class="navbar-default navbar-static-side" role="navigation">
-        <div class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu">
-                <li class="nav-header">
-                    <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="/tpshop2/Public/admin/img/profile_small.jpg"  />
-                             </span>
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+       <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center"> <span>
+                        <img alt="image" class="img-circle" src="/TP/Public/admin/img/profile_small.jpg"  />
+                         </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo session("admin_name");?></strong>
 
-                            </span></span>  </a>
-                     
-                    </div>
-                    <div class="logo-element">
-                        IN+
-                    </div>
-                </li>
-                <li class="active">
-                    <a href="http://webapplayers.com/inspinia_admin-v2.5/index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">Dashboard v.1</a></li>
-                        <li><a href="http://webapplayers.com/inspinia_admin-v2.5/dashboard_2.html">Dashboard v.2</a></li>
-                        <li><a href="http://webapplayers.com/inspinia_admin-v2.5/dashboard_3.html">Dashboard v.3</a></li>
-                        <li class="active"><a href="dashboard_4_1.html">Dashboard v.4</a></li>
-                        <li><a href="http://webapplayers.com/inspinia_admin-v2.5/dashboard_5.html">Dashboard v.5 <span class="label label-primary pull-right">NEW</span></a></li>
-                    </ul>
-                </li>
-             
-            </ul>
+                        </span></span>  </a>
+                 
+                </div>
+                <div class="logo-element">
+                   <?php echo session("admin_name");?>
+                </div>
+            </li>
+            <li class="active">
+                <a><i class="fa fa-newspaper-o"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li <if condition="<?php echo (CONTROLLER_NAME); ?> eq Product " /> class='actived'><a href="<?=U('Product/index')?>">订单展示</a></li>
+                    
+                </ul>
+            </li>
+            <li class="active">
+                <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">分类展示</a></li>
+                    
+                </ul>
+            </li>
+            <li class="active">
+                <a><i class="fa fa-apple"></i> <span class="nav-label">商品管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品展示</a></li>
+                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品添加</a></li>
+                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品编辑</a></li>
+                    
+                </ul>
+            </li>
+            <li class="active">
+                <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">用户列表</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a><i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
+            </li>
+         
+        </ul>
 
-        </div>
-    </nav>
-
+    </div>
+</nav>
+        <!--right-->
         <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            
-        </div>
-            <ul class="nav navbar-top-links navbar-right">
-                <li>
-                    <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
-                </li>
+            <div class="row border-bottom">
+           <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+<div class="navbar-header">
+    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+    
+</div>
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            <span class="m-r-sm text-muted welcome-message">欢迎来到你的月亮我的心后台管理</span>
+        </li>
 
-                <li>
-                    <a href="http://webapplayers.com/inspinia_admin-v2.5/login.html">
-                        <i class="fa fa-sign-out"></i> 退出
-                    </a>
-                </li>
-                <li>
-                    <a class="right-sidebar-toggle">
-                        <i class="fa fa-tasks"></i>
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-        </div>
-
-
-        <div class="wrapper wrapper-content">
-        
-
-        </div>
-
-
-        <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
+        <li>
+            <a href="<?=U('Admin/AuthLogin/login_out') ?>">
+                <i class="fa fa-sign-out"></i> 退出
+            </a>
+        </li>
+        <li>
+            <a class="right-sidebar-toggle">
+                <i class="fa fa-tasks"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
             </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
+             <!--中间内容 -->
+            <div class="wrapper wrapper-content">
+                 asdssd
             </div>
-        </div>
-
+            <div class="footer">
+    <div class="pull-right">
+       <strong>欢迎光临</strong> 
+    </div>
+    <div>
+        <strong>Copyright</strong> Example Company &copy; 2016-2017
+    </div>
+</div>
         </div>
 
     </div>
+    <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
+    <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
+    <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Mainly scripts -->
-    <script src="/tpshop2/Public/admin/js/jquery-2.1.1.js"></script>
-    <script src="/tpshop2/Public/admin/js/bootstrap.min.js"></script>
-    <script src="/tpshop2/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="/tpshop2/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-    <!-- Peity -->
-    <script src="/tpshop2/Public/admin/js/plugins/peity/jquery.peity.min.js"></script>
-    <script src="/tpshop2/Public/admin/js/demo/peity-demo.js"></script>
-
+    
     <!-- Custom and plugin javascript -->
-    <script src="/tpshop2/Public/admin/js/inspinia.js"></script>
-    <script src="/tpshop2/Public/admin/js/plugins/pace/pace.min.js"></script>
+    <script src="/TP/Public/admin/js/inspinia.js"></script>
+    <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
 
     <!-- jQuery UI -->
-    <script src="/tpshop2/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
-    <!-- Jvectormap -->
-    <script src="/tpshop2/Public/admin/js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="/tpshop2/Public/admin/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-
-    <!-- Sparkline -->
-    <script src="/tpshop2/Public/admin/js/plugins/sparkline/jquery.sparkline.min.js"></script>
-
-    <!-- Sparkline demo data  -->
-    <script src="/tpshop2/Public/admin/js/demo/sparkline-demo.js"></script>
 </body>
 </html>

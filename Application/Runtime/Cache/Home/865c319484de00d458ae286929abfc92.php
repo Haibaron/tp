@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/front.css'?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap-theme.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/front.css'?>" />
 
 
 </head>
@@ -14,11 +14,11 @@
 <div class="container">
 	<div class="row" id="header">
 				<div class="col-md-3">
-					<img id="logo" src="/tpshop2/Public/img/logo.png" />
+					<img id="logo" src="/tp/Public/img/logo.png" />
 				</div>
 				<div class="col-md-9">
 				
-				  <img style="width:100%;" src="/tpshop2/Public/img/shop_step_2.jpg" />
+				  <img style="width:100%;" src="/tp/Public/img/shop_step_2.jpg" />
 				  
 				</div>
 			</div>
@@ -107,8 +107,8 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/tpshop2/Public/js/jquery.js"></script>
-<script type="text/javascript" src="/tpshop2/Public/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/tp/Public/js/bootstrap.min.js "></script>
 <script type="text/javascript">
 	
 		//$('#myModal').modal('show');
