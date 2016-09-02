@@ -14,7 +14,7 @@
                     </ol>
                 </div>
                 <div class="col-lg-2">
-
+                <a href="index.html" class="btn  pull-right">Home</a>
                 </div>
             </div>
 

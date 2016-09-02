@@ -36,8 +36,8 @@
                 <a><i class="fa fa-apple"></i> <span class="nav-label">商品管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li><a href="<?=U('Product/index')?>">商品展示</a></li>
-                    <li><a href="">商品添加</a></li>
-                    <li><a href="">商品编辑</a></li>
+                    <li><a href="<?=U('Product/add')?>">商品添加</a></li>
+                  
                     
                 </ul>
             </li>

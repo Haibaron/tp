@@ -11,7 +11,7 @@ class ProductController extends Controller {
     public function index(){
     	
     	$count = M('Product')->where('status=1')->count();
-    	$Page = new \Think\Page($count,15);
+    	$Page = new \Org\Util\Page($count,8);
     	$Page->setConfig('first','首页');
     	$Page->setConfig('end','尾页');
     	$Page->setConfig('next','下一页');
@@ -20,11 +20,45 @@ class ProductController extends Controller {
     	
 
     	$show = $Page->show();
-    	$products = M('Product')->limit($Page->firstRow.','.$Page->listRows)->select();
+    	$products = M('Product')->limit($Page->firstRow.','.$Page->listRows)->order('id desc')->select();
     	$this->assign('products',$products);
     	$this->assign('page',$show);
     	$this->display(); 
 
     }
-     public function add(){}
+     public function add(){
+
+     	$this->display('form');
+     }
+     public function do_add(){
+
+     	$rules = array(     
+     	      array('title','require','商品名称必须！'),  
+     	      array('price','require','价格必须！'),
+     	      array('img','require','商品描述必须！'),
+     	      array('desc','require','商品描述必须！'),
+     	      array('content','require','商品内容必须！'),
+     	        );
+     	
+     	 if (!M("Product")->validate($rules)->create()){     
+     	      $this->error(M("Product")->getError());
+     	 }else{  
+     	  if(IS_POST){
+     	  	$Product=D('Product');
+     	  		if($Product->create()){ 
+     	       if($Product->add()){
+     	         $this->success('处理成功！',U('index'));
+     	         exit();
+     	       }else{
+     	             $error=mysqli_error();
+     	             $this->error('处理失败！'.$error);
+     	            }   			
+     	  		}
+     	  }
+ 	    }
+    }
+
+
+
+
 }

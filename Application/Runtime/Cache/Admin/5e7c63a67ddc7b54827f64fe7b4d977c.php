@@ -12,6 +12,7 @@
 
     <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
     <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/TP/Public/Admin/lightbox/css/lightbox.css">
 </head>
 <body>
     <div id="wrapper">
@@ -31,39 +32,42 @@
                 <div class="logo-element">
                    <?php echo session("admin_name");?>
                 </div>
+
+
             </li>
-            <li class="active">
+            <li <?php if(CONTROLLER_NAME == 'Order'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-newspaper-o"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li <if condition="<?php echo (CONTROLLER_NAME); ?> eq Product " /> class='actived'><a href="<?=U('Product/index')?>">订单展示</a></li>
-                    
+                    <li><a href="">订单展示</a>
+                    </li>
+                        
                 </ul>
             </li>
-            <li class="active">
+            <li <?php if(CONTROLLER_NAME == 'Catalog'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">分类展示</a></li>
                     
                 </ul>
-            </li>
-            <li class="active">
+            </li >
+            <li <?php if(CONTROLLER_NAME == 'Product'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-apple"></i> <span class="nav-label">商品管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品展示</a></li>
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品添加</a></li>
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">商品编辑</a></li>
+                    <li><a href="<?=U('Product/index')?>">商品展示</a></li>
+                    <li><a href="">商品添加</a></li>
+                    <li><a href="">商品编辑</a></li>
                     
                 </ul>
             </li>
-            <li class="active">
+            <li <?php if(CONTROLLER_NAME == 'User'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">用户列表</a></li>
+                    <li><a href="">用户列表</a></li>
                     
                 </ul>
             </li>
-            <li>
-                <a><i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
+            <li <?php if(CONTROLLER_NAME == 'web'): ?>class="active"<?php endif; ?>>
+                <a href="<?=U('Product/index')?>"> <i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
             </li>
          
         </ul>
@@ -98,7 +102,7 @@
             </div>
              <!--中间内容 -->
             <div class="wrapper wrapper-content">
-                 asdssd
+                 
             </div>
             <div class="footer">
     <div class="pull-right">
@@ -111,18 +115,22 @@
         </div>
 
     </div>
-    <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
-    <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
-    <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+   <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
+  <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
+  <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    
-    <!-- Custom and plugin javascript -->
-    <script src="/TP/Public/admin/js/inspinia.js"></script>
-    <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
+  
+  Custom and plugin javascript
+  <script src="/TP/Public/admin/js/inspinia.js"></script>
+  <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
 
-    <!-- jQuery UI -->
-    <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+  jQuery UI
+  <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
+   <script  src="/TP/Public/Admin/lightbox/js/lightbox.js"></script>
+
+
+
 
 </body>
 </html>
