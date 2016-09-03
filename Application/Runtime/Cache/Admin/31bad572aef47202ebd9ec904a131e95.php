@@ -147,7 +147,7 @@
                                 </thead>
                                 <tbody>
                                <?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i;?><tr>
-                                	<td><a href="<?php echo ($p["img"]); ?>" data-lightbox="light" data-title="<?php echo ($p["title"]); ?>" ><img style="height: 50px;" src="<?php echo ($p["img"]); ?>"></a></td>
+                                	<td><a href="/TP/<?php echo ($p["img"]); ?>" data-lightbox="light" data-title="<?php echo ($p["title"]); ?>" ><img style="height: 50px;" src="/TP/<?php echo ($p["img"]); ?>"></a></td>
                                 	    <td><span class="pie"><?php echo ($p["title"]); ?></span></td>
                                 	     <td><?php echo ($p["cata_id"]); ?></td>
                                 	    <td><?php echo ($p["price"]); ?></td>

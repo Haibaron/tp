@@ -44,7 +44,7 @@
                                 <tbody>
                                <volist name="products" id="p">
                                 	<tr>
-                                	<td><a href="{$p.img}" data-lightbox="light" data-title="{$p.title}" ><img style="height: 50px;" src="{$p.img}"></a></td>
+                                	<td><a href="__ROOT__/{$p.img}" data-lightbox="light" data-title="{$p.title}" ><img style="height: 50px;" src="__ROOT__/{$p.img}"></a></td>
                                 	    <td><span class="pie">{$p.title}</span></td>
                                 	     <td>{$p.cata_id}</td>
                                 	    <td>{$p.price}</td>

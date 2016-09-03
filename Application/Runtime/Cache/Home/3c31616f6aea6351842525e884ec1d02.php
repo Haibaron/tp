@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>fenye</title>
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/list.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/front.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tpshop2/Public/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="<?= '/TP/Public/css/bootstrap.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/TP/Public/css/bootstrap-theme.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/TP/Public/css/list.css' ?>" />
+	<link rel="stylesheet" href="<?= '/TP/Public/css/front.css' ?>" />
+	<link rel="stylesheet" href="<?= '/TP/Public/css/nivo-slider.css' ?>" />
 	
 	
 
@@ -62,11 +62,11 @@
 		<div class="row">
 			<?php foreach ($v as $p) { ?> 
 			 		<div class="col-md-3 product_item" >
-					<img class="product_item_img" src="/tpshop2<?=($p['img']) ?>" />
+					<img class="product_item_img" src="/TP<?=($p['img']) ?>" />
 					<ul class="clearfix">
     					<?php $imgs=M('product_img')->where("product_id=".$p['id'])->limit(4)->select(); foreach ($imgs as $i) { ?>
      				<li>
-     					<img  src="/tpshop2<?=($i['url'])?>" />
+     					<img  src="/TP<?=($i['url'])?>" />
      				</li>
      			<?php
  } ?>
@@ -79,8 +79,8 @@
 		</div>
 	 </div>
 </body>
-<script type="text/javascript" src="<?php echo '/tpshop2/Public/js/jquery.js'?>"></script>
-<script type="text/javascript" src="<?php echo '/tpshop2/Public/js/bootstrap.min.js'?>"></script>
+<script type="text/javascript" src="<?php echo '/TP/Public/js/jquery.js'?>"></script>
+<script type="text/javascript" src="<?php echo '/TP/Public/js/bootstrap.min.js'?>"></script>
 <script type="text/javascript">
 $(function(){
 	$('.product_item ul li').mouseover(function(){

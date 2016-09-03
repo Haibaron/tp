@@ -10,7 +10,7 @@ class ProductController extends Controller {
 	}
     public function index(){
     	
-    	$count = M('Product')->where('status=1')->count();
+    	$count = M('Product')->count();
     	$Page = new \Org\Util\Page($count,8);
     	$Page->setConfig('first','首页');
     	$Page->setConfig('end','尾页');
@@ -44,9 +44,9 @@ class ProductController extends Controller {
      	      $this->error(M("Product")->getError());
      	 }else{  
      	  if(IS_POST){
-     	  	$Product=D('Product');
-     	  		if($Product->create()){ 
-     	       if($Product->add()){
+     	  	$Pro=D('Product');
+     	    if($Pro->create()){ 
+     	       if($Pro->add()){
      	         $this->success('处理成功！',U('index'));
      	         exit();
      	       }else{

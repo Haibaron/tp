@@ -30,7 +30,7 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Product/do_add')?>" method="post" class="form-horizontal">
+                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品名称:</label>
                                  <div class="col-sm-8"><input type="text" name="title" class="form-control">
@@ -44,7 +44,7 @@
                              </div>
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品图片:</label>
-                                 <div class="col-sm-8"><input type="file" name="phone">
+                                 <div class="col-sm-8"><input type="file" name="img" />
                                  </div>
                              </div>
                              <div class="form-group">

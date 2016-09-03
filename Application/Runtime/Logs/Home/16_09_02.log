@@ -1,0 +1,964 @@
+[ 2016-09-02T21:13:20+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:1.2601s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.4900s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T21:13:34+08:00 ] ::1 /TP/index.php/Home/Login/user_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-02T21:13:34+08:00 ] ::1 /TP/index.php/Home/Login/vrifyimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-02T21:55:05+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.290017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.291017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-09-02T21:55:11+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+
+[ 2016-09-02T21:55:12+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.6450s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.1050s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.060004s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0920s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0030s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0030s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.329019s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.332019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-02T21:55:17+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.1160s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=123 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=124 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=125 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=126 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=127 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=129 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=130 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=131 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T21:55:21+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (14,108,109,110,111) )  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (14,108,109,110,111) )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.053003s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=132 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=133 ) LIMIT 4   [ RunTime:0.0030s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=134 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=135 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=136 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=137 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=138 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=139 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140008s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.144008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T21:55:23+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092005s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.094005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-02T21:55:33+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+
+[ 2016-09-02T21:55:33+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0030s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109006s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.112006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-09-02T21:55:40+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.066004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T21:55:49+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=123 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=124 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=125 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=126 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=127 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=129 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=130 ) LIMIT 4   [ RunTime:0.0030s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=131 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104006s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.107006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T21:57:27+08:00 ] ::1 /TP/index.php/Home/Login/user_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.273016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.274016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-02T21:57:28+08:00 ] ::1 /TP/index.php/Home/Login/vrifyimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T22:09:14+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-02T22:09:36+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (16,116,117) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (16,116,117) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: ac E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+
+[ 2016-09-02T22:09:41+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (13,103,104,105,106,107) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=123 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=124 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=125 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=126 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=127 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=129 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=130 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=131 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.059003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-02T22:10:39+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+
+[ 2016-09-02T22:10:39+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=31 )  [ RunTime:0.0380s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (31,227,228,229,230,231,232,233) )  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (31,227,228,229,230,231,232,233) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=72 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=73 ) LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-02T22:10:50+08:00 ] ::1 /TP/index.php/Home/Product/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Product
+
+[ 2016-09-02T22:10:55+08:00 ] ::1 /TP/index.php/Home/Shopping/cart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 29 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 39 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product` WHERE ( id=41 ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 63 行.
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 86 行.
+SQL: SELECT * FROM `product` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 63 行.
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-02T22:11:03+08:00 ] ::1 /TP/index.php/Home/shopping/updatecart?id=&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_cart` [ RunTime:0.0468s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+
+[ 2016-09-02T22:11:04+08:00 ] ::1 /TP/index.php/Home/shopping/updatecart?id=&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_cart` [ RunTime:0.0156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+
+[ 2016-09-02T22:11:05+08:00 ] ::1 /TP/index.php/Home/shopping/updatecart?id=&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_cart` [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='2' WHERE ( id= )
+
+[ 2016-09-02T22:11:07+08:00 ] ::1 /TP/index.php/Home/shopping/updatecart?id=&num=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_cart` [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='7' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user_cart` SET `num`='7' WHERE ( id= )
+
+[ 2016-09-02T22:11:16+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=32 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (32,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248) )  [ RunTime:0.1540s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (32,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: ac E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+
+[ 2016-09-02T22:11:29+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+
+[ 2016-09-02T22:11:29+08:00 ] ::1 /TP/index.php/Home/Detail/getlistone/id/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (24,154,155,156,157,158,159,160) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (24,154,155,156,157,158,159,160) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (0) )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=52 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=55 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=53 ) LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=54 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
