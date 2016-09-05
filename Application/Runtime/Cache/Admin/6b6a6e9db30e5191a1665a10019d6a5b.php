@@ -78,7 +78,7 @@
             <li <?php if(CONTROLLER_NAME == 'User'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?=U('User/index')?>">用户列表</a></li>
+                    <li><a href="">用户列表</a></li>
                     
                 </ul>
             </li>
@@ -118,66 +118,75 @@
             </div>
              <!--中间内容 -->
             <div class="wrapper wrapper-content">
-                    <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>商品展示</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a>Product</a>
-                        </li>
-                        <li class="active">
-                            <strong>index</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-lg-2">
-                <a href="index.html" class="btn  pull-right">Home</a>
-                </div>
-            </div>
+                 
+	<div class="row wrapper border-bottom white-bg page-heading">
+	             <div class="col-lg-10">
+	                 <h2>商品展示</h2>
+	                 <ol class="breadcrumb">
+	                     <li>
+	                         <a href="index.html">Home</a>
+	                     </li>
+	                     <li>
+	                         <a>Product</a>
+	                     </li>
+	                     <li class="active">
+	                         <strong>Form</strong>
+	                     </li>
+	                 </ol>
+	             </div>
+	             <div class="col-lg-2">
+	           
+	             </div>
+	         </div>
 
-   <div class="wrapper wrapper-content">
-         
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <div class="ibox-tools">
-                                <a class="collapse-link">
-                                    <i class="fa fa-chevron-up"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="ibox-content">
+	<div class="wrapper wrapper-content">
+	      
+	                 <div class="ibox float-e-margins">
+	                     <div class="ibox-title">
+	                         <div class="ibox-tools">
+	                             <a class="collapse-link">
+	                                 <i class="fa fa-chevron-up"></i>
+	                             </a>
+	                         </div>
+	                     </div>
+	                     <div class="ibox-content">
 
-                            <table class="table table-hover" width="800px">
-                                <thead>
-                                <tr>
-                                    <th>图片</th>
-                                    <th>名称</th>
-                                    <th>分类</th>
-                                    <th>价格</th>
-                                 
-                                    <th>操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
+	                        <form  method="post" action="<?=U('Admin/Productcatalog/do_edit')?>"  class="form-horizontal">
+                              <input type="hidden" name="id" value="<?php echo ($thiscatalog['id']); ?>">
+	                          <div class="form-group">
+                                 <label class="col-sm-2 control-label">分类名称:</label>
+                                 <div class="col-sm-8"><input type="text" name="name" value="<?php echo ($thiscatalog['name']); ?>" class="form-control">
+                                 </div>
+                             </div>
+	                          <div class="form-group">
+	                              <label class="col-sm-2 control-label">分类选项:</label>
+	                              <div class="col-sm-8">
+	                              	<select name="parent_id">
+	                              	 <option value="0">一级分类</option>
+	                              	<?php if(is_array($level1)): $i = 0; $__LIST__ = $level1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l1): $mod = ($i % 2 );++$i;?><option <?php if($l1["id"] == $thiscatalog['parent_id'] ): ?>selected="selected"<?php endif; ?> value="<?php echo ($l1["id"]); ?>"><?php echo ($l1["name"]); ?></option>
+	                              	   <?php $level2=M('product_catalog')->where('parent_id='.$l1['id'])->select() ?>   
+	                              	   <?php if(is_array($level2)): $i = 0; $__LIST__ = $level2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l2): $mod = ($i % 2 );++$i;?><option <?php if($l2["id"] == $thiscatalog['parent_id'] ): ?>selected="selected"<?php endif; ?> value="<?php echo ($l2["id"]); ?>">└───<?php echo ($l2["name"]); ?></option>
+	                              	      
+	                              	         <?php $level3=M('product_catalog')->where('parent_id='.$l2['id'])->select() ?>   
+			                              	    <?php if(is_array($level3)): $i = 0; $__LIST__ = $level3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l3): $mod = ($i % 2 );++$i;?><option value="<?php echo ($l3["id"]); ?>">└───┴───<?php echo ($l3["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>              
+	                              		
+	                              	</select>
+	                              </div>
+	                          </div>
+	                        
+	                          <div class="form-group ">
+	                          <div class="col-sm-10">
+	                             <button class="btn btn-primary  pull-right">提交分类</button>
+	                             </div>
+	                          </div>
+	                     
+	                         </form>
 
-                               <?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i;?><tr>
-                                	<td><a href="/tp/<?php echo ($p["img"]); ?>" data-lightbox="light" data-title="<?php echo ($p["title"]); ?>" ><img style="height: 50px;" src="/tp/<?php echo ($p["img"]); ?>"></a></td>
-                                	    <td><span class="pie"><?php echo ($p["title"]); ?></span></td>
-                                	     <?php $data=M('Product_catalog')->where('id='.$p['id'])->find()?>
-                                         <td><?php echo ($data["name"]); ?></td>
-                                	    <td>￥:<?php echo ($p["price"]); ?></td>
-                                	  
-                                	     <td > <a class="btn btn-success btn-sm" href="">编辑</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
-                                	</tr><?php endforeach; endif; else: echo "" ;endif; ?>                        
-                                </tbody>
-                            </table>
-                           <?php echo ($page); ?>
-                        </div>
-                    </div>
-   </div>
+	                     </div>
+	                 </div>
+	</div>
+</body>
+</html>
             </div>
             <div class="footer">
     <div class="pull-right">

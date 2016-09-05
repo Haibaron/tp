@@ -120,21 +120,21 @@
             <div class="wrapper wrapper-content">
                     <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>商品展示</h2>
+                    <h2>用户列表</h2>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html">Admin</a>
                         </li>
                         <li>
-                            <a>Product</a>
+                            <a>User</a>
                         </li>
                         <li class="active">
-                            <strong>Form</strong>
+                            <strong>index</strong>
                         </li>
                     </ol>
                 </div>
                 <div class="col-lg-2">
-              
+                <a href="index.html" class="btn  pull-right">User</a>
                 </div>
             </div>
 
@@ -149,106 +149,34 @@
                             </div>
                         </div>
                         <div class="ibox-content">
-
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品分类:</label>
-                                 <div class="col-sm-2">
-                                 <select name='product_id'  id="level1" class="form-control" >
-                                      <option >请选择分类</option>
-                                     <?php if(is_array($level1)): $i = 0; $__LIST__ = $level1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l1): $mod = ($i % 2 );++$i;?><option value="<?php echo ($l1["id"]); ?>">
-                                            <?php echo ($l1["name"]); ?>
-                                        </option><?php endforeach; endif; else: echo "" ;endif; ?>   
-                                 </select>  
-                                 </div>
-                                 <div class="col-sm-2"  >
-                                 <select name='product_id' id="level2" class="form-control">
-                                      <option  >请选择分类</option>
-                                 </select>  
-                                 </div>
-                                 <div class="col-sm-2"  >
-                                 <select name='product_id' id="level3" class="form-control">
-                                      <option >请选择分类</option>
-                                 </select>  
-                                 </div>
-                                 
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品名称:</label>
-                                 <div class="col-sm-8"><input type="text" name="title" class="form-control">
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">价格:</label>
-                                 <div class="col-sm-2"><input type="text" name="price" class="form-control"></div>
-                                 <label class="col-sm-2 control-label">库存:</label>
-                                 <div class="col-sm-2"><input type="text" name="" class="form-control"></div>   
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品图片:</label>
-                                 <div class="col-sm-8"><input type="file" name="img" />
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品描述:</label>
-                                 <div class="col-sm-8"><input type="text" name="desc" class="form-control">
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品内容:</label>
-                                 <div class="col-sm-8"><textarea name="content" id="content" rows="8" class="form-control"></textarea></div>
-                                 
-                             </div>
-                             <div class="form-group ">
-                             <div class="col-sm-10">
-                                <button class="btn btn-primary  pull-right">提交商品</button>
-                                </div>
-                             </div>
+                            <table class="table table-hover" width="800px">
+                                <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>用户</th>
+                                    <th>邮箱地址</th>
+                                    <th>创建时间</th>
+                                    <th>是否激活</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                               <?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i;?><tr>
+                                	<td><?php echo ($p["id"]); ?></td>
+                                	    <td><span class="pie"><?php echo ($p["username"]); ?></span></td>
+                                      
+                                	   <td><span class="pie"><?php echo ($p["email"]); ?></span></td>
+                                	 
+                                        <td><span class="pie"><?=date('Y-m-d H:i:s',$p['create_time'])?></span></td>
+                                          <td><?php if($p["actived"] == 1): ?><button class="btn btn-primary btn-xs">已激活 </button><?php else: ?>未激活<?php endif; ?></td>
+                                	     <td > <a class="btn btn-success btn-sm" href="">禁用</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                	</tr><?php endforeach; endif; else: echo "" ;endif; ?>                        
+                                </tbody>
+                            </table>
                         
-                            </form>
-
                         </div>
                     </div>
    </div>
-
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/kindeditor.js"></script>
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/lang/zh_CN.js"></script>
-
-   <script type="text/javascript"> 
-        $('#level1').change(function(){
-            var id=$(this).val();
-          // console.log($(this).val());
-           $.get("<?php echo U('Admin/Product/getcatalog');?>",{id:id},function(data){
-              var str="";
-               for (var i = 0;i<data.length;i++) {
-                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>';
-                  //  console.log(data[i]);
-               }
-            
-               $('#level2').html(str);
-           })
-        })
-
-        $('#level2').change(function(){
-            var id=$(this).val();
-           console.log($(this).val());
-             $.get("<?php echo U('Admin/Product/getcatalog');?>",{id:id},function(data){
-              var str="";
-               for (var i = 0;i<data.length;i++) {
-                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>'
-                    console.log(data[i]);
-               }
-               $('#level3').html(str);
-           })
-        })
-
-
-
-        KindEditor.ready(function(K) {
-                K.create('#content');
-            });
-   </script>
-   </html>
             </div>
             <div class="footer">
     <div class="pull-right">

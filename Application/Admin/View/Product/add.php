@@ -30,16 +30,30 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品分类:</label>
                                  <div class="col-sm-2">
-                                 <select name='product_id'>
-                                     <option value="">
-                                         
-                                     </option>
-                                 </select>
+                                 <select name='product_id'  id="level1" class="form-control" >
+                                      <option >请选择分类</option>
+                                     <volist name="level1" id="l1">
+                                        <option value="{$l1.id}">
+                                            {$l1.name}
+                                        </option>
+                                     </volist>   
+                                 </select>  
                                  </div>
+                                 <div class="col-sm-2"  >
+                                 <select name='product_id' id="level2" class="form-control">
+                                      <option  >请选择分类</option>
+                                 </select>  
+                                 </div>
+                                 <div class="col-sm-2"  >
+                                 <select name='product_id' id="level3" class="form-control">
+                                      <option >请选择分类</option>
+                                 </select>  
+                                 </div>
+                                 
                              </div>
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品名称:</label>
@@ -83,6 +97,35 @@
    <script charset="utf-8" src="/tp/Public/Admin/js/editor/lang/zh_CN.js"></script>
 
    <script type="text/javascript"> 
+        $('#level1').change(function(){
+            var id=$(this).val();
+          // console.log($(this).val());
+           $.get("{:U('Admin/Product/getcatalog')}",{id:id},function(data){
+              var str="";
+               for (var i = 0;i<data.length;i++) {
+                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                  //  console.log(data[i]);
+               }
+            
+               $('#level2').html(str);
+           })
+        })
+
+        $('#level2').change(function(){
+            var id=$(this).val();
+           console.log($(this).val());
+             $.get("{:U('Admin/Product/getcatalog')}",{id:id},function(data){
+              var str="";
+               for (var i = 0;i<data.length;i++) {
+                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>'
+                    console.log(data[i]);
+               }
+               $('#level3').html(str);
+           })
+        })
+
+
+
         KindEditor.ready(function(K) {
                 K.create('#content');
             });

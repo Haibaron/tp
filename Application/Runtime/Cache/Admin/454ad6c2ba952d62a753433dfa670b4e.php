@@ -4,15 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台管理</title>
-     <link href="/TP/Public/admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/TP/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href="/tp/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Morris -->
-    <link href="/TP/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
-    <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
-    <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/TP/Public/Admin/lightbox/css/lightbox.css">
+    <link href="/tp/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/tp/Public/Admin/lightbox/css/lightbox.css">
+       <script src="/tp/Public/admin/js/jquery-2.1.1.js"></script>
+  <script src="/tp/Public/admin/js/bootstrap.min.js"></script>
+  <script src="/tp/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="/tp/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+  
+<!--   Custom and plugin javascript -->
+  <script src="/tp/Public/admin/js/inspinia.js"></script>
+  <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
+<!--jQuery UI -->
+  <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
+   <script  src="/tp/Public/Admin/lightbox/js/lightbox.js"></script>
+
+
+
 </head>
 <body>
     <div id="wrapper">
@@ -21,7 +36,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element text-center"> <span>
-                        <img alt="image" class="img-circle" src="/TP/Public/admin/img/profile_small.jpg"  />
+                        <img alt="image" class="img-circle" src="/tp/Public/admin/img/profile_small.jpg"  />
                          </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo session("admin_name");?></strong>
@@ -43,10 +58,11 @@
                         
                 </ul>
             </li>
-            <li <?php if(CONTROLLER_NAME == 'Catalog'): ?>class="active"<?php endif; ?>>
+            <li <?php if(CONTROLLER_NAME == 'Productcatalog'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">分类展示</a></li>
+                    <li><a href="<?=U('Productcatalog/index')?>">分类展示</a></li>
+                     <li><a href="<?=U('Productcatalog/add')?>">分类添加</a></li>
                     
                 </ul>
             </li >
@@ -194,22 +210,7 @@
         </div>
 
     </div>
-   <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
-  <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
-  <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-  <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-  
-  Custom and plugin javascript
-  <script src="/TP/Public/admin/js/inspinia.js"></script>
-  <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
-
-  jQuery UI
-  <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
-   <script  src="/TP/Public/Admin/lightbox/js/lightbox.js"></script>
-
-
-
+ 
 
 </body>
 </html>

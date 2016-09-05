@@ -78,7 +78,7 @@
             <li <?php if(CONTROLLER_NAME == 'User'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?=U('User/index')?>">用户列表</a></li>
+                    <li><a href="">用户列表</a></li>
                     
                 </ul>
             </li>
@@ -129,12 +129,12 @@
                             <a>Product</a>
                         </li>
                         <li class="active">
-                            <strong>Form</strong>
+                            <strong>index</strong>
                         </li>
                     </ol>
                 </div>
                 <div class="col-lg-2">
-              
+                <a href="index.html" class="btn  pull-right">Home</a>
                 </div>
             </div>
 
@@ -150,105 +150,61 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品分类:</label>
-                                 <div class="col-sm-2">
-                                 <select name='product_id'  id="level1" class="form-control" >
-                                      <option >请选择分类</option>
-                                     <?php if(is_array($level1)): $i = 0; $__LIST__ = $level1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l1): $mod = ($i % 2 );++$i;?><option value="<?php echo ($l1["id"]); ?>">
-                                            <?php echo ($l1["name"]); ?>
-                                        </option><?php endforeach; endif; else: echo "" ;endif; ?>   
-                                 </select>  
-                                 </div>
-                                 <div class="col-sm-2"  >
-                                 <select name='product_id' id="level2" class="form-control">
-                                      <option  >请选择分类</option>
-                                 </select>  
-                                 </div>
-                                 <div class="col-sm-2"  >
-                                 <select name='product_id' id="level3" class="form-control">
-                                      <option >请选择分类</option>
-                                 </select>  
-                                 </div>
+                            <table class="table table-hover" width="800px">
+                                <thead>
+                                <tr>
+                                    <th>id</th>
+                                    
+                                    <th>分类</th>
+                                
                                  
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品名称:</label>
-                                 <div class="col-sm-8"><input type="text" name="title" class="form-control">
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">价格:</label>
-                                 <div class="col-sm-2"><input type="text" name="price" class="form-control"></div>
-                                 <label class="col-sm-2 control-label">库存:</label>
-                                 <div class="col-sm-2"><input type="text" name="" class="form-control"></div>   
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品图片:</label>
-                                 <div class="col-sm-8"><input type="file" name="img" />
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品描述:</label>
-                                 <div class="col-sm-8"><input type="text" name="desc" class="form-control">
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品内容:</label>
-                                 <div class="col-sm-8"><textarea name="content" id="content" rows="8" class="form-control"></textarea></div>
-                                 
-                             </div>
-                             <div class="form-group ">
-                             <div class="col-sm-10">
-                                <button class="btn btn-primary  pull-right">提交商品</button>
-                                </div>
-                             </div>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                               <?php if(is_array($level1)): $i = 0; $__LIST__ = $level1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l1): $mod = ($i % 2 );++$i;?><tr>
+                                	<td><?php echo ($l1["id"]); ?></td>
+                                	    <td><span class="pie"><?php echo ($l1["name"]); ?></span></td>
+                                	   
+                                	     <td > <a class="btn btn-success btn-sm" href="<?php echo U('Admin/Productcatalog/edit/id/'.$l1['id']);?>">编辑</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                	</tr>
+                                    <?php $level2=M('product_catalog')->where('parent_id='.$l1['id'])->select() ?>   
+                                    <?php if(is_array($level2)): $i = 0; $__LIST__ = $level2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l2): $mod = ($i % 2 );++$i;?><tr class="level2" id="level<?php echo ($l2["id"]); ?>">
+                                        <td><?php echo ($l2["id"]); ?></td>
+                                            <td ><span class="pie">└───<?php echo ($l2["name"]); ?></span></td>
+                                           
+                                             <td > <a class="btn btn-success btn-sm" href="<?php echo U('Admin/Productcatalog/edit/id/'.$l2['id']);?>">编辑</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                        </tr>
+                                          <?php $level3=M('product_catalog')->where('parent_id='.$l2['id'])->select() ?>   
+                                     <?php if(is_array($level3)): $i = 0; $__LIST__ = $level3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$l3): $mod = ($i % 2 );++$i;?><tr class="level3 parentlevel<?php echo ($l2["id"]); ?>">
+                                         <td><?php echo ($l3["id"]); ?></td>
+                                             <td><span class="pie">└───┴───<?php echo ($l3["name"]); ?></span></td>
+                                            
+                                              <td > <a class="btn btn-success btn-sm" href="<?php echo U('Admin/Productcatalog/edit/id/'.$l3['id']);?>">编辑</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                         </tr><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>   
+                                    
+                                </tbody>
+                            </table>
                         
-                            </form>
-
                         </div>
                     </div>
    </div>
+   <style type="text/css">
+       .level3{
+        display: none;
+       }
+   </style>
+   <script type="text/javascript">
+       $(function(){
+          $('.level2 td').click(function(){
+           var id=$(this).parents('tr').attr('id');
+           var cls=".parent"+id;
 
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/kindeditor.js"></script>
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/lang/zh_CN.js"></script>
-
-   <script type="text/javascript"> 
-        $('#level1').change(function(){
-            var id=$(this).val();
-          // console.log($(this).val());
-           $.get("<?php echo U('Admin/Product/getcatalog');?>",{id:id},function(data){
-              var str="";
-               for (var i = 0;i<data.length;i++) {
-                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>';
-                  //  console.log(data[i]);
-               }
-            
-               $('#level2').html(str);
-           })
-        })
-
-        $('#level2').change(function(){
-            var id=$(this).val();
-           console.log($(this).val());
-             $.get("<?php echo U('Admin/Product/getcatalog');?>",{id:id},function(data){
-              var str="";
-               for (var i = 0;i<data.length;i++) {
-                str+='<option value="'+data[i].id+'">'+data[i].name+'</option>'
-                    console.log(data[i]);
-               }
-               $('#level3').html(str);
-           })
-        })
-
-
-
-        KindEditor.ready(function(K) {
-                K.create('#content');
-            });
+           $(cls)=toggle();
+        
+          }) 
+       });
    </script>
-   </html>
             </div>
             <div class="footer">
     <div class="pull-right">

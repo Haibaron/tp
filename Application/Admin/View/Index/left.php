@@ -25,10 +25,11 @@
                         
                 </ul>
             </li>
-            <li <if condition="CONTROLLER_NAME eq 'Catalog'" >class="active"</if>>
+            <li <if condition="CONTROLLER_NAME eq 'Productcatalog'" >class="active"</if>>
                 <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="http://webapplayers.com/inspinia_admin-v2.5/index.html">分类展示</a></li>
+                    <li><a href="<?=U('Productcatalog/index')?>">分类展示</a></li>
+                     <li><a href="<?=U('Productcatalog/add')?>">分类添加</a></li>
                     
                 </ul>
             </li >
@@ -44,7 +45,7 @@
             <li <if condition="CONTROLLER_NAME eq 'User'" >class="active"</if>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">用户列表</a></li>
+                    <li><a href="<?=U('User/index')?>">用户列表</a></li>
                     
                 </ul>
             </li>

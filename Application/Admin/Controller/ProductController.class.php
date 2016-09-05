@@ -27,8 +27,13 @@ class ProductController extends Controller {
 
     }
      public function add(){
-
-     	$this->display('form');
+        $this->assign('level1',M('Product_catalog')->where('parent_id=0')->select());
+     	$this->display();
+     }
+       public function getcatalog(){
+        $id=I('get.id');
+       $data= M('product_catalog')->where('parent_id='.$id)->select();
+        $this->ajaxReturn($data);
      }
      public function do_add(){
 
