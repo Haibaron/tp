@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>修改密码</h1>
-	<form method="post" action="__SELF__">
+	<form method="post" action="/tp/index.php/Home/Login/changepwd/id/1">
 		<p>
 			用户名：
 		</p>

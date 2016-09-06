@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>后台管理</title>
-     <link href="/TP/Public/admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/TP/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href="/tp/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Morris -->
-    <link href="/TP/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
-    <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
-    <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/TP/Public/Admin/lightbox/css/lightbox.css">
-       <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
-  <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
-  <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-  <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <link href="/tp/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/tp/Public/Admin/lightbox/css/lightbox.css">
+       <script src="/tp/Public/admin/js/jquery-2.1.1.js"></script>
+  <script src="/tp/Public/admin/js/bootstrap.min.js"></script>
+  <script src="/tp/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="/tp/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
   
 <!--   Custom and plugin javascript -->
-  <script src="/TP/Public/admin/js/inspinia.js"></script>
-  <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
+  <script src="/tp/Public/admin/js/inspinia.js"></script>
+  <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
-  <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
+  <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
   
 
 
@@ -38,7 +38,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element text-center"> <span>
-                        <img alt="image" class="img-circle" src="/TP/Public/admin/img/profile_small.jpg"  />
+                        <img alt="image" class="img-circle" src="/tp/Public/admin/img/profile_small.jpg"  />
                          </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo session("admin_name");?></strong>
@@ -120,7 +120,36 @@
             </div>
              <!--中间内容 -->
             <div class="wrapper wrapper-content">
-                 
+                 <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>修改密码</title>
+</head>
+<body>
+	<h1>修改密码</h1>
+	<form method="post" action="/tp/index.php/Admin/Login/changepwd/id/1">
+		<p>
+			用户名：
+		</p>
+		<p>
+			<input type="text" name="username" value="<?=$userinfo['username']?>">
+		</p>
+		<p>
+			 密码:
+		</p>
+		<p>
+			<input type="password" name="password" value="">
+		</p>
+		<p>
+			<input type="hidden" name="id" value="<?=$userinfo['id']?>">
+		</p>
+		<p>
+			<button type="submit">提交</button>
+		</p>
+	</form>
+</body>
+</html>
             </div>
             <div class="footer">
     <div class="pull-right">

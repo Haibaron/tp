@@ -33,6 +33,7 @@
 						<div class="form-group">
 							<label>密码</label>
 							<input type="password" class="form-control" name="password" value="" placeholder="请输入密码...">
+							<a href="{:U('Home/Login/find')}" class="pull-right" style="cursor:pointer;">忘记密码</a>
 							
 						</div>
 						<div><label>验证码</label></div>
@@ -42,8 +43,8 @@
 						</div>
 						<div style="float: left">	<img  src="__URL__/vrifyimg" onclick="this.src='__URL__/vrifyimg/'+Math.random()"></div>
 						<div class="form-group">
-							<button type="sub method="post" action=""mit" class="btn btn-block btn-danger">登录</button>
-							<a  type="sub method="post" href="<?php echo U('Login/user_regedit')?>" class="btn btn-block btn-success">注册</a>	
+							<button type="submit" class="btn btn-block btn-danger">登录</button>
+							<a  type="submit" href="<?php echo U('Login/user_regedit')?>" class="btn btn-block btn-success">注册</a>	
 						</div>
                   
 					</form>

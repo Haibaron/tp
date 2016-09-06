@@ -28,7 +28,7 @@ public function  _after_insert($data,$option){
 
 	$userid=$data["id"];
 	var_dump($userid);
-	$content="恭喜您，请前往如下地址<a href='http://localhost/tpshop2/index.php/Admin/Login/active/id/{$userid}'>激活</a>";
+	$content="恭喜您，请前往如下地址<a href='http://localhost/tp/index.php/Home/Login/active/id/{$userid}'>激活</a>";
 	$res=sendMail($useremail,'用户激活',$content);
 	//var_dump($res);
 	if($res['sign']==0){

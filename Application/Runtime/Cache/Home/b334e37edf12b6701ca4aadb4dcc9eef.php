@@ -3,16 +3,16 @@
 <head>
 	<title>自己的电商系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?php echo '/tp/Public/css/bootstrap.min.css'?>" />
-		<link rel="stylesheet" href="<?php echo '/tp/Public/css/bootstrap-theme.min.css'?>" />
-		<link rel="stylesheet" href="<?php echo '/tp/Public/css/nivo-slider.css'?>" />
-		<link rel="stylesheet" href="<?php echo '/tp/Public/css/login.css'?>" />
+	<link rel="stylesheet" href="<?php echo '/TP/Public/css/bootstrap.min.css'?>" />
+		<link rel="stylesheet" href="<?php echo '/TP/Public/css/bootstrap-theme.min.css'?>" />
+		<link rel="stylesheet" href="<?php echo '/TP/Public/css/nivo-slider.css'?>" />
+		<link rel="stylesheet" href="<?php echo '/TP/Public/css/login.css'?>" />
 </head>
 <body>
 	<div class="container">
 		<div class="row" id="header">
 			<div class="col-md-3">
-				<a href="#"><img id="logo" src="<?='/tp/Public/img/logo.png'?>"</a>
+				<a href="#"><img id="logo" src="<?='/TP/Public/img/logo.png'?>"</a>
 			</div>
 		</div>
 		<br />
@@ -26,7 +26,7 @@
 					用户注册
 				</div>
 				<div class="panel-body">
-				<form action="/tp/index.php/Home/Login/user_regedit" method="post" enctype="multipart/form-data" id="for1">
+				<form action="/TP/index.php/Home/Login/user_regedit" method="post" enctype="multipart/form-data" id="for1">
 						<div class="form-group">
 							<label>账户名</label>
 							<input type="text" class="form-control" name="username" placeholder="请输入账户名...">
@@ -58,9 +58,9 @@
 	</div>
 
 </body>
-<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>
-<script type="text/javascript" src="/tp/Public/js/jQuery-validate/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/tp/Public/js/jQuery-validate/validate_zh_cn.js"></script>
+<script type="text/javascript" src="/TP/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/TP/Public/js/jQuery-validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/TP/Public/js/jQuery-validate/validate_zh_cn.js"></script>
 <script type="text/javascript">
 	
 </script>

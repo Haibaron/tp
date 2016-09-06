@@ -124,16 +124,18 @@ class LoginController extends Controller {
       $userinfo=D('user')->where(array('email'=>$email))->find();
       if($userinfo){
         $userid=$userinfo['id'];
-        $content="请前往如下地址<a href='http://localhost/tpshop2/index.php/Admin/Login/changepwd/id/{$userid}'>找回密码</a>";
+        $content="请前往如下地址<a href='http://localhost/tp/index.php/Home/Login/changepwd/id/{$userid}'>找回密码</a>";
         $res=sendMail($email,'找回密码',$content);
         if($res['sign']==1){
-          $this->success('发送成功',U('Admin/Login/user_login'),3);
+          $this->success('发送成功',U('Home/Login/user_login'),3);
         }else{
           $this->error=$res['msg'];
-          }
+         }
       }
+    }else{
+        $this->display();
     }
-    $this->display();
+  
   }
 
 public function changepwd(){
