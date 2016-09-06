@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="<?= '/TP/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/TP/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/TP/Public/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '/TP/Public/css/front.css'?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap-theme.min.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="<?= '/tp/Public/css/front.css'?>" />
 
 </head>
 <body>
 <div class="container">
 	   <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/TP/Public/img/logo.png'?>" />
+				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -106,7 +106,7 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="/TP/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>
 <script type="text/javascript">
 	
 	$(".table #checkall").click(function(){

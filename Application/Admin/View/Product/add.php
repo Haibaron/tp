@@ -1,6 +1,25 @@
+ <style type="text/css">.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.fileUpload input.upload {  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#uploadBtn{
+  width: 70px;
+  }</style>
    <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>商品展示</h2>
+                    <h2>商品添加</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
@@ -66,10 +85,17 @@
                                  <label class="col-sm-2 control-label">库存:</label>
                                  <div class="col-sm-2"><input type="text" name="" class="form-control"></div>   
                              </div>
-                             <div class="form-group">
-                                 <label class="col-sm-2 control-label">商品图片:</label>
-                                 <div class="col-sm-8"><input type="file" name="img" />
-                                 </div>
+                             <div class="form-group  ">
+                            <label class="col-sm-2 control-label">商品图片:</label>
+                             <div class="col-md-4 ">
+                                <input id="uploadFile" placeholder="Choose File" class="form-control" disabled="disabled" /> 
+                                
+                              </div>
+                                <div class="fileUpload btn btn-primary">
+                                    <span>Upload</span>
+                                    <input id="uploadBtn" type="file" class="col-md-4 upload" />
+                                </div>
+                               
                              </div>
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品描述:</label>
@@ -93,8 +119,8 @@
                     </div>
    </div>
 
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/kindeditor.js"></script>
-   <script charset="utf-8" src="/tp/Public/Admin/js/editor/lang/zh_CN.js"></script>
+   <script charset="utf-8" src="/tp/Public/Admin/js/editor/kindeditor-all.js"></script>
+   <script charset="utf-8" src="/tp/Public/Admin/js/editor/lang/zh-CN.js"></script>
 
    <script type="text/javascript"> 
         $('#level1').change(function(){
@@ -123,8 +149,9 @@
                $('#level3').html(str);
            })
         })
-
-
+    document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
 
         KindEditor.ready(function(K) {
                 K.create('#content');

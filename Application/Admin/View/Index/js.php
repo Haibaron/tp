@@ -9,6 +9,6 @@
   <script src="__PUBLIC__/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
   <script src="__PUBLIC__/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
-   <script  src="__PUBLIC__/Admin/lightbox/js/lightbox.js"></script>
+  
 
 

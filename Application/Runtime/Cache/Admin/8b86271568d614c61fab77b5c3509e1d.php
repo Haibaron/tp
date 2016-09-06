@@ -9,11 +9,11 @@
 
     <title>INSPINIA | Login</title>
 
-    <link href="/TP/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/TP/Public/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/tp/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/tp/Public/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="/TP/Public/Admin/css/animate.css" rel="stylesheet">
-    <link href="/TP/Public/Admin/css/style.css" rel="stylesheet">
+    <link href="/tp/Public/Admin/css/animate.css" rel="stylesheet">
+    <link href="/tp/Public/Admin/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -45,8 +45,8 @@
     </div>
 
     <!-- Mainly scripts -->
-    <script src="/TP/Public/Admin/js/jquery-2.1.1.js"></script>
-    <script src="/TP/Public/Admin/js/bootstrap.min.js"></script>
+    <script src="/tp/Public/Admin/js/jquery-2.1.1.js"></script>
+    <script src="/tp/Public/Admin/js/bootstrap.min.js"></script>
 
 </body>
 

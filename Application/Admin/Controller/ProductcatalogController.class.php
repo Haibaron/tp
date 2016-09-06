@@ -9,7 +9,12 @@ class ProductcatalogController extends Controller {
 		}
 	}
     public function index(){
-         $level1 = M('Product_catalog')->where('parent_id=0')->select();
+       
+
+
+
+
+        $level1 = M('Product_catalog')->where('parent_id=0')->select();
         $this->assign('level1',$level1);
       
         $this->display(); 

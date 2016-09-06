@@ -24,7 +24,7 @@
   <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
   <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
-   <script  src="/tp/Public/Admin/lightbox/js/lightbox.js"></script>
+  
 
 
 

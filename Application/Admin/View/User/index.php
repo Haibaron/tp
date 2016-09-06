@@ -37,6 +37,7 @@
                                     <th>邮箱地址</th>
                                     <th>创建时间</th>
                                     <th>是否激活</th>
+                                    <th>状态</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
@@ -50,7 +51,15 @@
                                 	 
                                         <td><span class="pie"><?=date('Y-m-d H:i:s',$p['create_time'])?></span></td>
                                           <td><if condition="$p.actived eq 1"> <button class="btn btn-primary btn-xs">已激活 </button><else />未激活 </if></td>
-                                	     <td > <a class="btn btn-success btn-sm" href="">禁用</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                          <td><span class="pie">{$p.stauts|user_stauts}</span></td>
+                                	     <td > 
+                                          <if condition="$p.stauts eq '-1'">
+                                               <a class="btn btn-success btn-sm" href="{:U('Admin/User/enable/id/'.$p['id'])}">启用</a>
+                                          <else/> 
+                                               <a class="btn btn-success btn-sm" href="{:U('Admin/User/disable/id/'.$p['id'])}">禁用</a>
+                                           </if> 
+                                           <a class="btn btn-primary btn-sm" href="">删除</a>
+                                           </td>
                                 	</tr>
                                 </volist>                        
                                 </tbody>

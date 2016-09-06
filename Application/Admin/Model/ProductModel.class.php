@@ -9,7 +9,7 @@ class ProductModel extends Model{
   //商品的自动验证
   protected $_validate=array();
 
-  protected $insertFields=array('cata_id','title','brand_id','price','desc','content','img','recommend','new','hot','star')
+  protected $insertFields=array('cata_id','title','brand_id','price','desc','content','img','recommend','new','hot','star');
 
   protected $_auto=array(
     array("create_time","addGoodsTime",1,"function"));  //就是用addGoodsTime函数取完成对create_time字段的自动完成操作

@@ -24,7 +24,7 @@
   <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
   <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
-   <script  src="/tp/Public/Admin/lightbox/js/lightbox.js"></script>
+  
 
 
 
@@ -78,7 +78,7 @@
             <li <?php if(CONTROLLER_NAME == 'User'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">用户列表</a></li>
+                    <li><a href="<?=U('User/index')?>">用户列表</a></li>
                     
                 </ul>
             </li>

@@ -26,7 +26,8 @@ class LoginController extends Controller {
             if($vrify->check($captcha)){
               if($userinfo){
                   $salt=C('FRONT_SALT');
-                if($userinfo['password']==md5(md5($password.$salt))&&$userinfo['actived']==1){
+                if($userinfo['stauts']==0){
+                   if($userinfo['password']==md5(md5($password.$salt))&&$userinfo['actived']==1){
                        $_SESSION['is_login']=true;
                         session('is_login',1);
                         session('userid',$userinfo['id']);
@@ -40,7 +41,11 @@ class LoginController extends Controller {
                 }else{
                   echo "<script>alert('账户没有激活或密码错误')</script>";
                 }
-              }else{
+              }
+              else{
+                echo "<script>alert('账户已被禁用')</script>";
+              }
+            }else{
                 echo "<script>alert('账户不存在')</script>";
               }
             }else{

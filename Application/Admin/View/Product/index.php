@@ -33,6 +33,7 @@
                             <table class="table table-hover" width="800px">
                                 <thead>
                                 <tr>
+                                    <th>编号</th>
                                     <th>图片</th>
                                     <th>名称</th>
                                     <th>分类</th>
@@ -45,13 +46,14 @@
 
                                <volist name="products" id="p">
                                 	<tr>
+                                     <td>{$p.id}</td>
                                 	<td><a href="__ROOT__/{$p.img}" data-lightbox="light" data-title="{$p.title}" ><img style="height: 50px;" src="__ROOT__/{$p.img}"></a></td>
                                 	    <td><span class="pie">{$p.title}</span></td>
                                 	     <?php $data=M('Product_catalog')->where('id='.$p['id'])->find()?>
                                          <td>{$data.name}</td>
                                 	    <td>￥:{$p.price}</td>
                                 	  
-                                	     <td > <a class="btn btn-success btn-sm" href="">编辑</a><a class="btn btn-primary btn-sm" href="">删除</a></td>
+                                	     <td > <a class="btn btn-success btn-sm" href="{:U('Admin/Product/edit/id/'.$p['id'])}">编辑</a><a class="btn btn-primary btn-sm" href="{:U('Admin/Product/del/id/'.$p['id'])}" onclick="return confirm('您确定要删除么？？')">删除</a></td>
                                 	</tr>
                                 </volist>                        
                                 </tbody>
@@ -60,3 +62,4 @@
                         </div>
                     </div>
    </div>
+    <script  src="__PUBLIC__/Admin/lightbox/js/lightbox.js"></script>

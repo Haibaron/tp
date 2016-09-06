@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>后台管理</title>
     <include file="./Application/Admin/View/Index/css.php" />
      <include file="./Application/Admin/View/Index/js.php" />
+     <base href="http://localhost/tp/">
 </head>
 <body>
     <div id="wrapper">

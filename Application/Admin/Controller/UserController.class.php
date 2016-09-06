@@ -14,7 +14,15 @@ class UserController extends Controller {
         $this->display();
     }
 
+   public function disable($id){
+      M('User')->where('id='.$id)->setField('stauts',"-1");
+      $this->success('禁用成功',U('index'));
+   }
+   public function enable($id){
+      M('User')->where('id='.$id)->setField('stauts',"0");
+      $this->success('启用成功',U('index'));
 
+   }
 
 
 }
