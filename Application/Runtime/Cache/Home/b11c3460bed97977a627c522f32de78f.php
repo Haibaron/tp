@@ -21,17 +21,36 @@
 <script type="text/javascript">
 	$('#btn').click(function(){
 		var telephone=$('#telephone').val();
-		telephone=$.trim(telephone);
-
-		$.get("/tp/Message/message.php", {'telephone':telephone}, function(data){
+		//telephone=$.trim(telephone);
+  /* $.ajax({
+   	url:"/tp/Message/message.php",
+   	type:"get",
+   	dataType:'text',
+   	data:{'telephone':telephone},
+   	error:function(data){
+   		console.log(data);
+   	},
+   	success:function(json){
+   		debugger
+   		 if (json=='ok') {
+             	alert('发送成功');
+             }else{
+             	alert('发送失败');
+             	return false;
+             }
+   	}
+   })*/
+          $.get("/tp/Message/message.php", {'telephone':telephone}, function(data){
 			debugger;
              if (data=='ok') {
              	alert('发送成功');
              }else{
              	alert('发送失败');
+             	return false;
              }
               /* console.log(data);
              return false;*/
 		})
+		
 	})
 </script>

@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>后台管理</title>
-     <link href="/tp/Public/admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/tp/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href="/TP/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/TP/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Morris -->
-    <link href="/tp/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/TP/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
-    <link href="/tp/Public/admin/css/animate.css" rel="stylesheet">
-    <link href="/tp/Public/admin/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/tp/Public/Admin/lightbox/css/lightbox.css">
-       <script src="/tp/Public/admin/js/jquery-2.1.1.js"></script>
-  <script src="/tp/Public/admin/js/bootstrap.min.js"></script>
-  <script src="/tp/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-  <script src="/tp/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/TP/Public/Admin/lightbox/css/lightbox.css">
+       <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
+  <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
+  <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
   
 <!--   Custom and plugin javascript -->
-  <script src="/tp/Public/admin/js/inspinia.js"></script>
-  <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
+  <script src="/TP/Public/admin/js/inspinia.js"></script>
+  <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
-  <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
+  <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
   
 
 
@@ -38,7 +38,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element text-center"> <span>
-                        <img alt="image" class="img-circle" src="/tp/Public/admin/img/profile_small.jpg"  />
+                        <img alt="image" class="img-circle" src="/TP/Public/admin/img/profile_small.jpg"  />
                          </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo session("admin_name");?></strong>
@@ -171,7 +171,7 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
+                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品分类:</label>
                                  <div class="col-sm-2">
@@ -183,7 +183,7 @@
                                  </select>  
                                  </div>
                                  <div class="col-sm-2"  >
-                                 <select name='product_id' id="level2" class="form-control">
+                                 <select name='cata_id' id="level2" class="form-control">
                                       <option  >请选择分类</option>
                                  </select>  
                                  </div>
@@ -208,12 +208,12 @@
                              <div class="form-group  ">
                             <label class="col-sm-2 control-label">商品图片:</label>
                              <div class="col-md-4 ">
-                                <input id="uploadFile" placeholder="Choose File" class="form-control" disabled="disabled" /> 
+                                <input id="uploadFile" type="text" placeholder="Choose File" class="form-control" disabled="disabled" /> 
                                 
                               </div>
                                 <div class="fileUpload btn btn-primary">
                                     <span>Upload</span>
-                                    <input id="uploadBtn" type="file" class="col-md-4 upload" />
+                                    <input id="uploadBtn" type="file" name="img" class="col-md-4 upload" />
                                 </div>
                                
                              </div>

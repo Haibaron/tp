@@ -49,7 +49,7 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
+                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品分类:</label>
                                  <div class="col-sm-2">
@@ -63,7 +63,7 @@
                                  </select>  
                                  </div>
                                  <div class="col-sm-2"  >
-                                 <select name='product_id' id="level2" class="form-control">
+                                 <select name='cata_id' id="level2" class="form-control">
                                       <option  >请选择分类</option>
                                  </select>  
                                  </div>
@@ -93,7 +93,7 @@
                               </div>
                                 <div class="fileUpload btn btn-primary">
                                     <span>Upload</span>
-                                    <input id="uploadBtn" type="file" class="col-md-4 upload" />
+                                    <input id="uploadBtn" type="file" name="img" class="col-md-4 upload" />
                                 </div>
                                
                              </div>

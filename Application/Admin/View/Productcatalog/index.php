@@ -86,8 +86,10 @@
           $('.level2 td').click(function(){
            var id=$(this).parents('tr').attr('id');
            var cls=".parent"+id;
-
-           $(cls)=toggle();
+        // console.log(id);
+          console.log(cls);
+         //return false;
+           $(cls).toggle('slow');
         
           }) 
        });

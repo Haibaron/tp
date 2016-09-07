@@ -50,7 +50,8 @@ class ProductController extends Controller {
      	 }else{  
      	  if(IS_POST){
      	  	$Pro=D('Product');
-     	    if($Pro->create(I('post.'),1)){ 
+     	    if($data=$Pro->create(I('post.'),1)){ 
+      
      	       if($Pro->add()){
      	         $this->success('处理成功！',U('index'));
      	         exit();
