@@ -20,7 +20,7 @@
             <li <if condition="CONTROLLER_NAME eq 'Order'" >class="active"</if>>
                 <a><i class="fa fa-newspaper-o"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">订单展示</a>
+                    <li><a href="{:U('Admin/Order/index')}">订单展示</a>
                     </li>
                         
                 </ul>

@@ -18,7 +18,7 @@ include_once("./CCPRestSmsSDK.php");
 $accountSid= '8aaf070856fecb190156fff3bfaf00a1';
 
 //主帐号令牌,对应官网开发者主账号下的 AUTH TOKEN
-$accountToken= '2729408fc23a4e1e9929795e3d5c757e ';
+$accountToken= '2dfc0af1ada017fc0dd377f8359bd31d ';
 
 //应用Id，在官网应用列表中点击应用，对应应用详情中的APP ID
 //在开发调试的时候，可以使用官网自动为您分配的测试Demo的APP ID

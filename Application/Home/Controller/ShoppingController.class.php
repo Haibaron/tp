@@ -110,7 +110,7 @@ class ShoppingController extends Controller {
 		session('returnurl',U('Home/Shopping/pay_ordel'));
 		if(session('userid')){
 		$data=session('data');
-		var_dump($data);
+		//var_dump($data);
 		
 		$addr=M('user_address')->where('user_id='.session('userid'))->select();
 		$this->assign('carts',$data);
@@ -121,6 +121,24 @@ class ShoppingController extends Controller {
 		$this->display();
 	
 	}
+  public function do_pay_order(){
+  	var_dump(I('post.'));
+  	$address=M('User_address')->where('id='.I('post.address_id'))->find();
+  	$user=M('User')->where('id='.session('userid'))->find();
+  	$arr=array(
+  		'address_id'=>$address['id'],
+  		'address_name'=>$address['name'],
+  		'address_address'=>$address['addr'],
+  		'address_iphone'=>$address['iphone'],
+  		'user_id'=>session('userid'),
+  		'user_name'=>$user['username'],
+  		'create_time'=>time(),
+  		'num'=>I('post.sum'),
+  		);
 
+  	M('order')->add($arr);
+  	$this->success('提交订单成功',U("cart"));
+
+  }
 
 }

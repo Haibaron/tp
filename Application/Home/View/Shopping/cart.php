@@ -25,7 +25,7 @@
 			<th width="150">操作</th>
 			<?php  
             $sum=0;
-			foreach ($carts as $c) { var_dump($c); $data=M('Product')->where("id=".$c['product_id'])->find(); ?>
+			foreach ($carts as $c) {  $data=M('Product')->where("id=".$c['product_id'])->find();//var_dump($c); ?>
 				<tr  class="cartid">
 					
 					<td><input type="checkbox" class="is_select" value="<?=$c['id'] ?>" >

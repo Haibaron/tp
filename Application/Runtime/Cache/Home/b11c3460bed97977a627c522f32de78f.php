@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>找回密码</title>
-	<link rel="stylesheet" href="<?php echo '/TP/Public/css/bootstrap.min.css'?>" />
-	<link rel="stylesheet" href="<?php echo '/TP/Public/css/bootstrap-theme.min.css'?>" />
+	<link rel="stylesheet" href="<?php echo '/tp/Public/css/bootstrap.min.css'?>" />
+	<link rel="stylesheet" href="<?php echo '/tp/Public/css/bootstrap-theme.min.css'?>" />
 </head>
 <body>
 	<h1>找回密码</h1>
-	<form method="post" action="/TP/index.php/Home/Login/find"> 
+	<form method="post" action="/tp/index.php/Home/Login/find"> 
 		<p>邮箱:</p>
 		<p><input type="text" name="email"><span>*请输如注册时的邮箱 </span></p>
 		<p>电话号码:<span>*请输如注册时的号码 </span></p>
@@ -17,18 +17,21 @@
 	</form>
 </body>
 </html>
-<script type="text/javascript" src="/TP/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/tp/Public/js/jquery.js"></script>
 <script type="text/javascript">
 	$('#btn').click(function(){
 		var telephone=$('#telephone').val();
 		telephone=$.trim(telephone);
 
-		$.get("/TP/message/message.php", {'telephone':telephone}, function(data){
+		$.get("/tp/Message/message.php", {'telephone':telephone}, function(data){
+			debugger;
              if (data=='ok') {
-             	alert('发送成功')
+             	alert('发送成功');
              }else{
-             	alert('发送失败')
+             	alert('发送失败');
              }
+              /* console.log(data);
+             return false;*/
 		})
 	})
 </script>

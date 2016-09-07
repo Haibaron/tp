@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>后台管理</title>
-     <link href="/TP/Public/admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/TP/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href="/tp/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Morris -->
-    <link href="/TP/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
-    <link href="/TP/Public/admin/css/animate.css" rel="stylesheet">
-    <link href="/TP/Public/admin/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/TP/Public/Admin/lightbox/css/lightbox.css">
-       <script src="/TP/Public/admin/js/jquery-2.1.1.js"></script>
-  <script src="/TP/Public/admin/js/bootstrap.min.js"></script>
-  <script src="/TP/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-  <script src="/TP/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <link href="/tp/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/tp/Public/Admin/lightbox/css/lightbox.css">
+       <script src="/tp/Public/admin/js/jquery-2.1.1.js"></script>
+  <script src="/tp/Public/admin/js/bootstrap.min.js"></script>
+  <script src="/tp/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="/tp/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
   
 <!--   Custom and plugin javascript -->
-  <script src="/TP/Public/admin/js/inspinia.js"></script>
-  <script src="/TP/Public/admin/js/plugins/pace/pace.min.js"></script>
+  <script src="/tp/Public/admin/js/inspinia.js"></script>
+  <script src="/tp/Public/admin/js/plugins/pace/pace.min.js"></script>
 <!--jQuery UI -->
-  <script src="/TP/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
+  <script src="/tp/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script> 
   
 
 
@@ -38,7 +38,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element text-center"> <span>
-                        <img alt="image" class="img-circle" src="/TP/Public/admin/img/profile_small.jpg"  />
+                        <img alt="image" class="img-circle" src="/tp/Public/admin/img/profile_small.jpg"  />
                          </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo session("admin_name");?></strong>
@@ -55,7 +55,7 @@
             <li <?php if(CONTROLLER_NAME == 'Order'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-newspaper-o"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">订单展示</a>
+                    <li><a href="<?php echo U('Admin/Order/index');?>">订单展示</a>
                     </li>
                         
                 </ul>
@@ -168,7 +168,7 @@
 
                                <?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i;?><tr>
                                      <td><?php echo ($p["id"]); ?></td>
-                                	<td><a href="/TP/<?php echo ($p["img"]); ?>" data-lightbox="light" data-title="<?php echo ($p["title"]); ?>" ><img style="height: 50px;" src="/TP/<?php echo ($p["img"]); ?>"></a></td>
+                                	<td><a href="/tp/<?php echo ($p["img"]); ?>" data-lightbox="light" data-title="<?php echo ($p["title"]); ?>" ><img style="height: 50px;" src="/tp/<?php echo ($p["img"]); ?>"></a></td>
                                 	    <td><span class="pie"><?php echo ($p["title"]); ?></span></td>
                                 	     <?php $data=M('Product_catalog')->where('id='.$p['id'])->find()?>
                                          <td><?php echo ($data["name"]); ?></td>
@@ -182,7 +182,7 @@
                         </div>
                     </div>
    </div>
-    <script  src="/TP/Public/Admin/lightbox/js/lightbox.js"></script>
+    <script  src="/tp/Public/Admin/lightbox/js/lightbox.js"></script>
             </div>
             <div class="footer">
     <div class="pull-right">

@@ -57,7 +57,7 @@
 			<th width="100">单价</th>
 			<th width="100">总额</th>
 			<th width="150">操作</th>
-			<?php  $sum=0; foreach ($carts as $c) { var_dump($c); $data=M('Product')->where("id=".$c['product_id'])->find(); ?>
+			<?php  $sum=0; foreach ($carts as $c) { $data=M('Product')->where("id=".$c['product_id'])->find();?>
 				<tr  class="cartid">
 					
 					<td><input type="checkbox" class="is_select" value="<?=$c['id'] ?>" >

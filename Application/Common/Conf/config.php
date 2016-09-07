@@ -11,6 +11,7 @@ return array(
    
     'TMPL_TEMPLATE_SUFFIX'=>'.php',
     'URL_HTML_SUFFIX'=>'',
+    
     //前台注册--随机字符串
     'FRONT_SALT'=>'dfsdfsadfasdfsda@@',
 );

@@ -25,9 +25,9 @@ class ProductModel extends Model{
         $upload = new \Think\Upload($config);// 实例化上传类
         $info=$upload->upload();  //完成上传
         header("Content-type:text/html;charset=utf-8");
-       /* var_dump($info);
+        var_dump($info);
         var_dump($data);
-        die();*/
+        die();
         if($info){
 
             $goodsPath=$info['img']['savepath'].$info['img']['savename'];

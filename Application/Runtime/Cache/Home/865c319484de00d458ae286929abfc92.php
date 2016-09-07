@@ -24,6 +24,7 @@
 			</div>
 	<br>
 	<div>
+	<form method="post" action="<?php echo U('Home/Shopping/do_pay_order');?>">
 	  <div>
 	  	<h3>收货地址 <a href="" class="btn btn-success pull-right" id="myModal">添加</a></h3>
 		
@@ -32,7 +33,7 @@
 		<table class="table table-bordered">
 			<?php  foreach($addr as $a){ ?>
 					<tr align="center">
-					    <td width="20"><input type="radio" class="is_select" value="<?=$a['id'] ?>"</td>
+					    <td width="20"><input type="radio" name="address_id" class="is_select" value="<?=$a['id'] ?>"</td>
 						<td>收件人:<?=$a['name']?></td>
 						<td>收货地址:<?=$a['addr']?></td>
 						<td>联系方式:<?=$a['iphone']?></td>
@@ -84,9 +85,15 @@
 		<tr align="" >
 					<td colspan="3" > </td>
 			    <td> 总价：<?=$sum ?></td>
+			    <input type="hidden" name="sum" value="<?=$sum ?>">
 				</tr>
+				<tr align="" >
+					<td colspan="3" > </td>
+			    <td><button class="btn btn-danger">提交订单</button></td>
+				</tr> 
 		</table>
 </div>
+</form>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

@@ -23,12 +23,15 @@
 		var telephone=$('#telephone').val();
 		telephone=$.trim(telephone);
 
-		$.get("__ROOT__/message/message.php", {'telephone':telephone}, function(data){
+		$.get("__ROOT__/Message/message.php", {'telephone':telephone}, function(data){
+			debugger;
              if (data=='ok') {
-             	alert('发送成功')
+             	alert('发送成功');
              }else{
-             	alert('发送失败')
+             	alert('发送失败');
              }
+              /* console.log(data);
+             return false;*/
 		})
 	})
 </script>

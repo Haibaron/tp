@@ -88,7 +88,7 @@
                              <div class="form-group  ">
                             <label class="col-sm-2 control-label">商品图片:</label>
                              <div class="col-md-4 ">
-                                <input id="uploadFile" placeholder="Choose File" class="form-control" disabled="disabled" /> 
+                                <input id="uploadFile" type="text" placeholder="Choose File" class="form-control" disabled="disabled" /> 
                                 
                               </div>
                                 <div class="fileUpload btn btn-primary">
