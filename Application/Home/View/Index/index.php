@@ -3,10 +3,10 @@
 <head>
 	<title>自己的电商系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/front.css'?>" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/nivo-slider.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/front.css" />
 </head>
 <body>
 <div class="container">
@@ -21,7 +21,7 @@
 					</div>	
 					<ul>
 						<?php foreach($catalogs as $c){?>
-						<li><a href="<?=U('Home/Detail/getlistone',array('id'=>$c['id'])) ?>"><?=$c['name']?></a></li>
+						<li><a href="<?php U('Home/Detail/getlistone',array('id'=>$c['id'])) ?>"><?php echo $c['name']?></a></li>
 						<?php }?>
 					</ul>
 				</div>
@@ -29,10 +29,10 @@
 		 	<div class="col-md-9">
 		       <div class="slider-wrapper theme-default">
 		            <div id="slider" class="nivoSlider">
-		                <a href="#"><img src="<?= '__PUBLIC__/upload/1.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '__PUBLIC__/upload/2.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '__PUBLIC__/upload/3.jpg'?>"  /></a>
-		                <a href="#"><img src="<?php echo '__PUBLIC__/upload/4.jpg'?>"  /></a>
+		                <a href="#"><img src="__PUBLIC__/upload/1.jpg"  /></a>
+		                <a href="#"><img src="__PUBLIC__/upload/2.jpg"  /></a>
+		                <a href="#"><img src="__PUBLIC__/upload/3.jpg"  /></a>
+		                <a href="#"><img src="__PUBLIC__/upload/4.jpg"  /></a>
 		            </div>
 		        </div>
 			</div>
@@ -43,11 +43,11 @@
 				<div  id="hot_sale">
 				<?php foreach($products as $p){?>
 				<div class="item clearfix">
-					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><img src="<?=$p['img']?>"  style="width:150px;height:150px"/></a>
-					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><h5><?=$p['title']?></h5></a>
-					<p ><?=$p['desc']?></p>
+					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><img src="<?php echo $p['img']?>"  style="width:150px;height:150px"/></a>
+					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><h5><?php echo $p['title']?></h5></a>
+					<p ><?php echo $p['desc']?></p>
 					<div class="price">
-						¥<?=number_format($p['price'],2)?>
+						¥<?php echo number_format($p['price'],2)?>
 					</div>
 					<a href="#" class="btn btn-danger buy_now">立即抢购</a>
 				</div>
@@ -65,14 +65,14 @@
 				    <div role="tabpanel" class="tab-pane active" id="notice">
 				    	<ul>
 				    		<?php foreach($notice as $n){?>
-				    		<li><a href="#"><?=$n['title']?></a></li>
+				    		<li><a href="#"><?php echo $n['title']?></a></li>
 				    		<?php }?>
 				    	</ul>
 				    </div>
 				    <div role="tabpanel" class="tab-pane" id="new">
 						<ul>
 				    		<?php foreach($new as $n){?>
-				    		<li><a href="#"><?=$n['title']?></a></li>
+				    		<li><a href="#"><?php echo $n['title']?></a></li>
 				    		<?php }?>
 				    	</ul>
 				    </div>
@@ -91,22 +91,22 @@
 		<br />
 		<div class="row floor">
 			<div class="col-md-12">
-				<p class="title"><span><?=$i?>f</span><?=$cata['name']?></p>
+				<p class="title"><span><?php echo $i?>f</span><?php echo $cata['name']?></p>
 				<div class="main clearfix">
 					<div class="first clearfix">
-						<img src="<?=$f_recommend['img']?>" style="width:200px;height:200px" />
-						<h5><?=$f_recommend['title']?></h5>
-						<p><?=$f_recommend['desc']?></p>
+						<img src="<?php echo $f_recommend['img']?>" style="width:200px;height:200px" />
+						<h5><?php echo $f_recommend['title']?></h5>
+						<p><?php echo $f_recommend['desc']?></p>
 						<div class="price">
-							¥<?=$f_recommend['price']?>
+							¥<?php echo $f_recommend['price']?>
 						</div>
 						<a href="#" class="btn btn-danger buy_now">立即抢购</a>
 					</div>
 					<?php foreach($floor as $f){?>
 					<div class="item">
-						<img src="<?=$f['img']?>"  style="width:100px;height:100px"/>
-						<div class="t"><?=$f['title']?></div>
-						<div class="price">￥<?=$f['price']?></div>
+						<img src="<?php echo $f['img']?>"  style="width:100px;height:100px"/>
+						<div class="t"><?php echo $f['title']?></div>
+						<div class="price">￥<?php echo $f['price']?></div>
 					</div>
 					<?php }?>
 				</div>

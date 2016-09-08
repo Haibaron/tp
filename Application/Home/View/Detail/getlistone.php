@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>fenye</title>
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/list.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/front.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/nivo-slider.css' ?>" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/list.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/front.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/nivo-slider.css" />
 	
 	
 
@@ -21,12 +21,12 @@
 		<div class="col-md-3">
 			<div id="list_menu">
 					<div id="menu_title" >
-						<?=$listname['name'] ?>
+						<?php echo $listname['name'] ?>
 					</div>	
 					<ul>
 
 					<?php foreach ($data as  $value): ?>
-						  <li <?php if($value['id']==$val['id']){ ?> class="active"  <?php } ?>><a href="<?=U('Detail/getlistone/',array('id'=>$value['id']))?>">
+						  <li <?php if($value['id']==$val['id']){ ?> class="active"  <?php } ?>><a href="<?php U('Detail/getlistone/',array('id'=>$value['id']))?>">
 						 	<?php echo  $value['name'] ?>
 						 </a></li>
 					<?php endforeach ?>
@@ -54,7 +54,7 @@
 			</table>
 			<br>
 			<?php foreach ($h as $key => $valu) { ?>
-				 <a  href="<?=U('Home/Detail/getlistone',array('id'=>$val['id'])).'?brand_id='.$valu['id'] ?>" <?php if($valu['id']==$v[0]['brand_id']){ ?> class="active"  <?php } ?> ><?=$valu['name'] ?></a>
+				 <a  href="<?php U('Home/Detail/getlistone',array('id'=>$val['id'])).'?brand_id='.$valu['id'] ?>" <?php if($valu['id']==$v[0]['brand_id']){ ?> class="active"  <?php } ?> ><?php echo $valu['name'] ?></a>
 		<?php	} ?>
 		
 		<br>
@@ -62,12 +62,12 @@
 		<div class="row">
 			<?php foreach ($v as  $p) { //var_dump($products) ?> 
 			 		<div class="col-md-3 product_item" >
-					<img class="product_item_img" src="__ROOT__<?=($p['img']) ?>" />
+					<img class="product_item_img" src="__ROOT__<?php echo ($p['img']) ?>" />
 					<ul class="clearfix">
     					<?php $imgs=M('product_img')->where("product_id=".$p['id'])->limit(4)->select();
      				foreach ($imgs as $i) {  ?>
      				<li>
-     					<img  src="__ROOT__<?=($i['url'])?>" />
+     					<img  src="__ROOT__<?php echo ($i['url'])?>" />
      				</li>
      			<?php
      				}	
@@ -75,7 +75,7 @@
     			    </ul>	
     			    <h5><?php echo $p['title'] ?></h5>
     			    <p><?php echo $p['price'] ?></p>
-    			    <a href="<?=U("Product/detail/".$p->id)?>" class="btn btn-danger">立即购买</a>
+    			    <a href="<?php U("Product/detail/".$p->id)?>" class="btn btn-danger">立即购买</a>
 			    </div>    			
 			<?php  } ?> 			
 		</div>

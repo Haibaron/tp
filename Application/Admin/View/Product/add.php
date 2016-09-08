@@ -49,7 +49,7 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?=U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+                           <form action="<?php U('Admin/Product/do_add')?>" method="post" enctype="multipart/form-data" class="form-horizontal">
                              <div class="form-group">
                                  <label class="col-sm-2 control-label">商品分类:</label>
                                  <div class="col-sm-2">

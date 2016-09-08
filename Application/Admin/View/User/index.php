@@ -49,7 +49,7 @@
                                       
                                 	   <td><span class="pie">{$p.email}</span></td>
                                 	 
-                                        <td><span class="pie"><?=date('Y-m-d H:i:s',$p['create_time'])?></span></td>
+                                        <td><span class="pie"><?php echo date('Y-m-d H:i:s',$p['create_time'])?></span></td>
                                           <td><if condition="$p.actived eq 1"> <button class="btn btn-primary btn-xs">已激活 </button><else />未激活 </if></td>
                                           <td><span class="pie">{$p.stauts|user_stauts}</span></td>
                                 	     <td > 

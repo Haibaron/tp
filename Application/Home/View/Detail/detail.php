@@ -3,10 +3,10 @@
 <head>
 	<title>自己的电商系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '__PUBLIC__/css/front.css'?>" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/nivo-slider.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/front.css" />
 </head>
 <body id="product_detail">
 	<div class="container">
@@ -14,11 +14,11 @@
 		<br />
 		<div class="row">
 			<div class="col-md-6" id="product_imgs">
-				<img id="product_main_img" src="<?='__ROOT__'.$product['img']?>" />
+				<img id="product_main_img" src="<?php echo '__ROOT__'.$product['img']?>" />
 				<ul class="clearfix">
 				 	<?php foreach($imgs as $i){ ?>
 		 			<li>
-						<img  src="<?='__ROOT__'.$i['url']?>">
+						<img  src="<?php echo '__ROOT__'.$i['url']?>">
 					</li>
 					<?php } ?>
 				</ul>
@@ -26,13 +26,13 @@
 				<i class="glyphicon glyphicon-heart"><a href="">关注商品</a></i>
 			</div>
 			<div class="col-md-6">
-			<form method="post" action="<?=U('Home/Shopping/addcart')?>">
-				<h3><?=$product['title']?></h3>
+			<form method="post" action="<?php U('Home/Shopping/addcart')?>">
+				<h3><?php echo $product['title']?></h3>
 				<input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
 				<table class="product_arg">
 					<tr>
 						<td class="l">价格：</td>
-						<td class="price">￥<?=$product['price']?></td>
+						<td class="price">￥<?php echo $product['price']?></td>
 					</tr>
 					<tr>
 						<td class="l">商品评分：</td>

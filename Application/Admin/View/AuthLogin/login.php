@@ -31,7 +31,7 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form method="post" class="m-t" role="form" action="<?=U('Admin/AuthLogin/login_check')  ?>" novalidate>
+            <form method="post" class="m-t" role="form" action="<?php U('Admin/AuthLogin/login_check')  ?>" novalidate>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="请输入用户名..." required="">
                 </div>
