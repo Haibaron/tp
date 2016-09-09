@@ -9,7 +9,7 @@
         </li>
 
         <li>
-            <a href="<?php U('Admin/AuthLogin/login_out') ?>">
+            <a href="<?= U('Admin/AuthLogin/login_out') ?>">
                 <i class="fa fa-sign-out"></i> 退出
             </a>
         </li>

@@ -31,7 +31,7 @@
 	                     </div>
 	                     <div class="ibox-content">
 
-	                        <form  method="post" action="<?php U('Admin/Productcatalog/do_add')?>"  class="form-horizontal">
+	                        <form  method="post" action="<?= U('Admin/Productcatalog/do_add')?>"  class="form-horizontal">
 
 	                          <div class="form-group">
                                  <label class="col-sm-2 control-label">分类名称:</label>

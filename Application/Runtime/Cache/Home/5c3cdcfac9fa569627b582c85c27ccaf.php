@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>   <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
+				<img id="logo" src="/tp/Public/img/logo.png" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -25,7 +25,7 @@
 					<i class="glyphicon glyphicon-shopping-cart"></i>我的购物车
 <?php if($_SESSION['is_login']){ ?>
 					<span>
-						<?=M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
+						<?php M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
 					</span>
 					<?php } ?>
 				</a>

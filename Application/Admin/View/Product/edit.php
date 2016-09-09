@@ -30,7 +30,7 @@
                         </div>
                         <div class="ibox-content">
 
-                           <form action="<?php U('Admin/Product/do_edit')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
+                           <form action="<?= U('Admin/Product/do_edit')?>" method="post" enctype="multipart/form-data"      class="form-horizontal">
 
                            <div class="form-group">
                                <label class="col-sm-2 control-label">商品名称:</label>

@@ -9,11 +9,11 @@
 
     <title>INSPINIA | Login</title>
 
-    <link href="/TP/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/TP/Public/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/tp/Public/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="/TP/Public/Admin/css/animate.css" rel="stylesheet">
-    <link href="/TP/Public/Admin/css/style.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/animate.css" rel="stylesheet">
+    <link href="/tp/Public/admin/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -31,7 +31,7 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form method="post" class="m-t" role="form" action="<?=U('Admin/AuthLogin/login_check') ?>" novalidate>
+            <form method="post" class="m-t" action="<?=U('Admin/AuthLogin/login_check') ?>" role="form"  novalidate>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="请输入用户名..." required="">
                 </div>
@@ -45,8 +45,8 @@
     </div>
 
     <!-- Mainly scripts -->
-    <script src="/TP/Public/Admin/js/jquery-2.1.1.js"></script>
-    <script src="/TP/Public/Admin/js/bootstrap.min.js"></script>
+    <script src="/tp/Public/Admin/js/jquery-2.1.1.js"></script>
+    <script src="/tp/Public/Admin/js/bootstrap.min.js"></script>
 
 </body>
 

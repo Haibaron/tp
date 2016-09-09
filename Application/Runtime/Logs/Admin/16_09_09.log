@@ -1,0 +1,1042 @@
+[ 2016-09-09T03:16:31+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-09-09T03:16:34+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000235s ]
+
+[ 2016-09-09T03:17:32+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-09-09T03:17:42+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-09-09T03:17:58+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2016-09-09T03:20:47+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-09-09T03:20:53+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-09-09T03:20:57+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-09-09T03:30:24+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-09-09T03:30:27+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-09-09T03:31:55+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-09-09T03:32:00+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:33:57+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:35:34+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:35:38+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2016-09-09T03:35:40+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:37:08+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2016-09-09T03:37:12+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:38:02+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-09-09T03:38:05+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:38:09+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:39:22+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:39:27+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/%3C?=%20U(%27Admin/AuthLogin/login_check%27)%20%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+ERR: 非法操作:
+
+[ 2016-09-09T03:40:53+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-09-09T03:40:57+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: auto /var/www/html/tp/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `admin` WHERE `username` = 'qzk' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000259s ]
+
+[ 2016-09-09T03:40:58+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-09-09T03:42:41+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
+
+[ 2016-09-09T03:42:49+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2016-09-09T03:48:42+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2016-09-09T04:18:59+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-09-09T04:20:52+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-09-09T04:20:55+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0734s ]
+NOTIC: [8] Undefined index: auto /var/www/html/tp/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `admin` WHERE `username` = 'qzk' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.1745s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-09-09T04:20:56+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-09-09T04:22:35+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-09-09T04:23:56+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-09-09T04:24:04+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-09-09T04:24:11+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: auto /var/www/html/tp/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `admin` WHERE `username` = 'qzk' AND `password` = '7fe6bf8f2ba21d100cff0178714d1a17' LIMIT 1   [ RunTime:0.0312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003963s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-09-09T04:24:17+08:00 ] 192.168.235.1 /tp/index.php/Admin/AuthLogin/login_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: auto /var/www/html/tp/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `admin` WHERE `username` = 'qzk' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-09-09T04:24:18+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-09-09T04:27:08+08:00 ] 192.168.235.1 /tp/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2016-09-09T04:27:10+08:00 ] 192.168.235.1 /tp/index.php/Admin/Productcatalog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=13 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=14 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=15 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=16 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=17 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=18 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=123 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=19 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=20 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=21 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=22 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=23 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=24 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=25 )  [ RunTime:0.0213s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=26 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=27 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=28 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=29 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=31 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=32 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=34 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=35 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=36 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=37 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=38 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=39 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=40 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=41 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=6 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=42 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=43 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=44 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=45 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=46 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=47 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=7 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=50 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=51 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=52 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=53 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=55 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=8 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=56 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=57 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=58 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=59 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=60 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=61 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=62 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=63 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=64 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=9 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=65 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=66 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=67 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=68 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=69 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=70 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=71 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=72 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=73 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=74 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=75 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=76 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=77 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=78 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=79 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=80 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=81 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=82 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=83 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=84 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=85 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=86 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=87 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=88 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=89 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=90 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=91 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=92 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=93 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=94 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=851 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=852 )  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-09-09T04:27:17+08:00 ] 192.168.235.1 /tp/index.php/Admin/Productcatalog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=13 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=14 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=15 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=16 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=17 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=18 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=123 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=19 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=20 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=21 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=22 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=23 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=24 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=25 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=26 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=27 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=28 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=29 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=31 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=32 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=34 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=35 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=36 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=37 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=38 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=39 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=40 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=41 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=6 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=42 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=43 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=44 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=45 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=46 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=47 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=48 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=7 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=49 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=50 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=51 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=52 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=53 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=54 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=55 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=8 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=56 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=57 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=58 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=59 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=60 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=61 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=62 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=63 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=64 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=9 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=65 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=66 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=67 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=68 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=69 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=70 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=71 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=72 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=73 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=74 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=75 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=76 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=77 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=78 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=79 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=80 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=81 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=82 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=83 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=84 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=85 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=86 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=87 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=88 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=89 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=90 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=91 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=92 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=93 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=94 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=851 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=852 )  [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-09-09T04:27:19+08:00 ] 192.168.235.1 /tp/index.php/Admin/Product/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-09-09T04:27:25+08:00 ] 192.168.235.1 /tp/index.php/Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=148 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=147 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=146 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=143 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=142 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=141 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=140 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=139 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-09-09T04:27:27+08:00 ] 192.168.235.1 /tp/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-09-09T04:27:27+08:00 ] 192.168.235.1 /tp/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000595s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+

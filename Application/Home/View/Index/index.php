@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
- <include file="./Application/Home/view/Index/header.php" />
+ <include file="./Application/Home/View/Index/header.php" />
 	
 		<br />
 		<div class="row">
@@ -21,7 +21,11 @@
 					</div>	
 					<ul>
 						<?php foreach($catalogs as $c){?>
-						<li><a href="<?php U('Home/Detail/getlistone',array('id'=>$c['id'])) ?>"><?php echo $c['name']?></a></li>
+						<li>
+						<a href="<?= U('Home/Detail/getlistone',array('id'=>$c['id'])) ?> ">
+							<?php echo $c['name']?>	
+						</a>
+						</li>
 						<?php }?>
 					</ul>
 				</div>
@@ -43,8 +47,8 @@
 				<div  id="hot_sale">
 				<?php foreach($products as $p){?>
 				<div class="item clearfix">
-					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><img src="<?php echo $p['img']?>"  style="width:150px;height:150px"/></a>
-					<a href="<?php echo U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><h5><?php echo $p['title']?></h5></a>
+					<a href="<?= U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><img src="__ROOT__/<?php echo $p['img']?>"  style="width:150px;height:150px"/></a>
+					<a href="<?= U('Home/Detail/detail',array('id'=>$p['id'])) ?>"><h5><?php echo $p['title']?></h5></a>
 					<p ><?php echo $p['desc']?></p>
 					<div class="price">
 						¥<?php echo number_format($p['price'],2)?>
@@ -94,7 +98,7 @@
 				<p class="title"><span><?php echo $i?>f</span><?php echo $cata['name']?></p>
 				<div class="main clearfix">
 					<div class="first clearfix">
-						<img src="<?php echo $f_recommend['img']?>" style="width:200px;height:200px" />
+						<img src="__ROOT__/<?php echo $f_recommend['img']?>" style="width:200px;height:200px" />
 						<h5><?php echo $f_recommend['title']?></h5>
 						<p><?php echo $f_recommend['desc']?></p>
 						<div class="price">
@@ -104,7 +108,7 @@
 					</div>
 					<?php foreach($floor as $f){?>
 					<div class="item">
-						<img src="<?php echo $f['img']?>"  style="width:100px;height:100px"/>
+						<img src="__ROOT__/<?php echo $f['img']?>"  style="width:100px;height:100px"/>
 						<div class="t"><?php echo $f['title']?></div>
 						<div class="price">￥<?php echo $f['price']?></div>
 					</div>

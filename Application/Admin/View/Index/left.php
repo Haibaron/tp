@@ -28,16 +28,16 @@
             <li <if condition="CONTROLLER_NAME eq 'Productcatalog'" >class="active"</if>>
                 <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?php U('Productcatalog/index')?>">分类展示</a></li>
-                     <li><a href="<?php U('Productcatalog/add')?>">分类添加</a></li>
+                    <li><a href="<?= U('Admin/Productcatalog/index')?>">分类展示</a></li>
+                     <li><a href="<?= U('Admin/Productcatalog/add')?>">分类添加</a></li>
                     
                 </ul>
             </li >
             <li <if condition="CONTROLLER_NAME eq 'Product'" >class="active"</if>>
                 <a><i class="fa fa-apple"></i> <span class="nav-label">商品管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?php U('Product/index')?>">商品展示</a></li>
-                    <li><a href="<?php U('Product/add')?>">商品添加</a></li>
+                    <li><a href="<?= U('Admin/Product/index')?>">商品展示</a></li>
+                    <li><a href="<?= U('Admin/Product/add')?>">商品添加</a></li>
                   
                     
                 </ul>
@@ -45,12 +45,12 @@
             <li <if condition="CONTROLLER_NAME eq 'User'" >class="active"</if>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?php U('User/index')?>">用户列表</a></li>
+                    <li><a href="<?= U('Admin/User/index')?>">用户列表</a></li>
                     
                 </ul>
             </li>
             <li <if condition="CONTROLLER_NAME eq 'web'" >class="active"</if>>
-                <a href="<?php U('Product/index')?>"> <i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
+                <a href="<?= U('Admin/Product/index')?>"> <i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
             </li>
          
         </ul>

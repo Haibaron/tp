@@ -26,7 +26,7 @@
 					<ul>
 
 					<?php foreach ($data as  $value): ?>
-						  <li <?php if($value['id']==$val['id']){ ?> class="active"  <?php } ?>><a href="<?php U('Detail/getlistone/',array('id'=>$value['id']))?>">
+						  <li <?php if($value['id']==$val['id']){ ?> class="active"  <?php } ?>><a href="<?= U('Detail/getlistone/',array('id'=>$value['id']))?>">
 						 	<?php echo  $value['name'] ?>
 						 </a></li>
 					<?php endforeach ?>
@@ -54,7 +54,7 @@
 			</table>
 			<br>
 			<?php foreach ($h as $key => $valu) { ?>
-				 <a  href="<?php U('Home/Detail/getlistone',array('id'=>$val['id'])).'?brand_id='.$valu['id'] ?>" <?php if($valu['id']==$v[0]['brand_id']){ ?> class="active"  <?php } ?> ><?php echo $valu['name'] ?></a>
+				 <a  href="<?= U('Home/Detail/getlistone',array('id'=>$val['id'])).'?brand_id='.$valu['id'] ?>" <?php if($valu['id']==$v[0]['brand_id']){ ?> class="active"  <?php } ?> ><?php echo $valu['name'] ?></a>
 		<?php	} ?>
 		
 		<br>
@@ -75,7 +75,7 @@
     			    </ul>	
     			    <h5><?php echo $p['title'] ?></h5>
     			    <p><?php echo $p['price'] ?></p>
-    			    <a href="<?php U("Product/detail/".$p->id)?>" class="btn btn-danger">立即购买</a>
+    			    <a href="<?= U("Product/detail/".$p->id)?>" class="btn btn-danger">立即购买</a>
 			    </div>    			
 			<?php  } ?> 			
 		</div>

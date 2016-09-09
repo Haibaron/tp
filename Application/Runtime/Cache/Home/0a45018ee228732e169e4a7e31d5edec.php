@@ -3,16 +3,16 @@
 <head>
 	<title>自己的电商系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tp/Public/css/bootstrap-theme.min.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tp/Public/css/nivo-slider.css' ?>" />
-	<link rel="stylesheet" href="<?= '/tp/Public/css/front.css'?>" />
+	<link rel="stylesheet" href="/tp/Public/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/tp/Public/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="/tp/Public/css/nivo-slider.css" />
+	<link rel="stylesheet" href="/tp/Public/css/front.css" />
 </head>
 <body id="product_detail">
 	<div class="container">
-		   <div class="row" id="header">
+	   <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
+				<img id="logo" src="/tp/Public/img/logo.png" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -37,7 +37,7 @@
 					<i class="glyphicon glyphicon-shopping-cart"></i>我的购物车
 <?php if($_SESSION['is_login']){ ?>
 					<span>
-						<?=M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
+						<?php M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
 					</span>
 					<?php } ?>
 				</a>
@@ -48,11 +48,11 @@
 		<br />
 		<div class="row">
 			<div class="col-md-6" id="product_imgs">
-				<img id="product_main_img" src="<?='/tp'.$product['img']?>" />
+				<img id="product_main_img" src="<?php echo '/tp'.$product['img']?>" />
 				<ul class="clearfix">
 				 	<?php foreach($imgs as $i){ ?>
 		 			<li>
-						<img  src="<?='/tp'.$i['url']?>">
+						<img  src="<?php echo '/tp'.$i['url']?>">
 					</li>
 					<?php } ?>
 				</ul>
@@ -60,13 +60,13 @@
 				<i class="glyphicon glyphicon-heart"><a href="">关注商品</a></i>
 			</div>
 			<div class="col-md-6">
-			<form method="post" action="<?=U('Home/Shopping/addcart')?>">
-				<h3><?=$product['title']?></h3>
+			<form method="post" action="<?= U('Home/Shopping/addcart')?>">
+				<h3><?php echo $product['title']?></h3>
 				<input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
 				<table class="product_arg">
 					<tr>
 						<td class="l">价格：</td>
-						<td class="price">￥<?=$product['price']?></td>
+						<td class="price">￥<?php echo $product['price']?></td>
 					</tr>
 					<tr>
 						<td class="l">商品评分：</td>
@@ -102,7 +102,7 @@
 					</tr>
 					<tr>
 						<td class="l"><a href="#" class="btn btn-success btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>立即购买</a></td>
-						<td >&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><button type="submit" class="btn btn-danger btn-lg">购物车</button></a></td>
+						<td >&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-danger btn-lg">购物车</button></td>
 					</tr>
 				</table>
 			</form>

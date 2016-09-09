@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-	<include file="./Application/Home/view/Index/header.php" />
+	<include file="./Application/Home/View/Index/header.php" />
 	<br>
 	<div>
 
@@ -31,7 +31,7 @@
 					<td><input type="checkbox" class="is_select" value="<?=$c['id'] ?>" >
 					<a href="<?php echo U('Home/Detail/detail/id/'.$c['product_id'])?>">
 					<input type="hidden" class="product_id" value="<?=$c['product_id']?>">
-					<img style="width:60px;" src="<?=$data['img']?>"  />
+					<img style="width:60px;" src="__ROOT__/<?=$data['img']?>"  />
 					<?=$data['title']?>
 					</a>	
 					</td>

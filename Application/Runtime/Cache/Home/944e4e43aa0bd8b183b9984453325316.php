@@ -13,7 +13,7 @@
 <div class="container">
 	   <div class="row" id="header">
 			<div class="col-md-3">
-				<img id="logo" src="<?='/tp/Public/img/logo.png'?>" />
+				<img id="logo" src="/tp/Public/img/logo.png" />
 			</div>
 			<div class="col-md-6">
 				<p id="contact"><i class="glyphicon glyphicon-phone-alt"></i>400-12345678910 <i class="glyphicon glyphicon-envelope"></i>shop@goodjobs.cn</p>
@@ -34,11 +34,11 @@
 			   		 
 			  <?php
  } ?>
-					<a id="shopcart" class="pull-right" href="<?php echo U('Home/Shopping/cart') ?>">
+					<a id="shopcart" class="pull-right" href="<?= U('Home/Shopping/cart') ?>">
 					<i class="glyphicon glyphicon-shopping-cart"></i>我的购物车
 <?php if($_SESSION['is_login']){ ?>
 					<span>
-						<?=M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
+						<?= M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
 					</span>
 					<?php } ?>
 				</a>
@@ -63,7 +63,7 @@
 					<td><input type="checkbox" class="is_select" value="<?=$c['id'] ?>" >
 					<a href="<?php echo U('Home/Detail/detail/id/'.$c['product_id'])?>">
 					<input type="hidden" class="product_id" value="<?=$c['product_id']?>">
-					<img style="width:60px;" src="<?=$data['img']?>"  />
+					<img style="width:60px;" src="/tp/<?=$data['img']?>"  />
 					<?=$data['title']?>
 					</a>	
 					</td>

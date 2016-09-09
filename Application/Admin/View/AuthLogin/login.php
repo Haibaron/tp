@@ -9,11 +9,11 @@
 
     <title>INSPINIA | Login</title>
 
-    <link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="__PUBLIC__/Admin/css/animate.css" rel="stylesheet">
-    <link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -31,7 +31,7 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form method="post" class="m-t" role="form" action="<?php U('Admin/AuthLogin/login_check')  ?>" novalidate>
+            <form method="post" class="m-t" action="<?=U('Admin/AuthLogin/login_check') ?>" role="form"  novalidate>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="请输入用户名..." required="">
                 </div>

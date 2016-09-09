@@ -10,7 +10,7 @@
 </head>
 <body id="product_detail">
 	<div class="container">
-		<include file="./Application/Home/view/Index/header.php" />
+	<include file="./Application/Home/View/Index/header.php" />
 		<br />
 		<div class="row">
 			<div class="col-md-6" id="product_imgs">
@@ -26,7 +26,7 @@
 				<i class="glyphicon glyphicon-heart"><a href="">关注商品</a></i>
 			</div>
 			<div class="col-md-6">
-			<form method="post" action="<?php U('Home/Shopping/addcart')?>">
+			<form method="post" action="<?= U('Home/Shopping/addcart')?>">
 				<h3><?php echo $product['title']?></h3>
 				<input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
 				<table class="product_arg">
@@ -68,7 +68,7 @@
 					</tr>
 					<tr>
 						<td class="l"><a href="#" class="btn btn-success btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>立即购买</a></td>
-						<td >&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><button type="submit" class="btn btn-danger btn-lg">购物车</button></a></td>
+						<td >&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-danger btn-lg">购物车</button></td>
 					</tr>
 				</table>
 			</form>
