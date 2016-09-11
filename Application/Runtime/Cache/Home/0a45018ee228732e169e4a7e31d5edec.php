@@ -33,11 +33,11 @@
 			   		 
 			  <?php
  } ?>
-					<a id="shopcart" class="pull-right" href="<?php echo U('Home/Shopping/cart') ?>">
+					<a id="shopcart" class="pull-right" href="<?= U('Home/Shopping/cart') ?>">
 					<i class="glyphicon glyphicon-shopping-cart"></i>我的购物车
 <?php if($_SESSION['is_login']){ ?>
 					<span>
-						<?php M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
+						<?= M('user_cart')->where('user_id='.$_SESSION['userid'])->count()?>
 					</span>
 					<?php } ?>
 				</a>

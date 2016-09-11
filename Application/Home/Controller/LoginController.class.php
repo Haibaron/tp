@@ -122,6 +122,8 @@ class LoginController extends Controller {
     if(IS_POST){
       $email=I('post.email');
       $userinfo=D('user')->where(array('email'=>$email))->find();
+      $telephone=I('post.telephone');
+      $userinfo1=D('user')->where(array('telephone'=>$telephone))->find();
       if($userinfo){
         $userid=$userinfo['id'];
         $content="请前往如下地址<a href='http://localhost/tp/index.php/Home/Login/changepwd/id/{$userid}'>找回密码</a>";
@@ -131,6 +133,17 @@ class LoginController extends Controller {
         }else{
           $this->error=$res['msg'];
          }
+      }elseif($userinfo1){
+        if(I('Codes')==$_COOKIE('code')){
+            $userid=$userinfo1['id'];
+            $content="请前往如下地址<a href='http://localhost/tp/index.php/Home/Login/changepwd/id/{$userid}'>找回密码</a>";
+            $res=sendMail($email,'找回密码',$content);
+            if($res['sign']==1){
+            $this->success('发送成功',U('Home/Login/user_login'),3);
+        }else{
+            $this->error=$res['msg'];
+         }
+        }
       }
     }else{
         $this->display();
