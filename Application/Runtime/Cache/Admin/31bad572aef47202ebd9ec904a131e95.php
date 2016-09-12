@@ -29,7 +29,7 @@
 
 
 
-     <base href="http://192.168.235.128/tp/">
+     <base href="http://localhost/tp/">
 </head>
 <body>
     <div id="wrapper">

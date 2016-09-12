@@ -1,0 +1,522 @@
+[ 2016-09-12T21:18:00+08:00 ] ::1 /tp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.2680s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.4090s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:18:10+08:00 ] ::1 /tp/index.php/Home/Detail/getlistone/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+
+[ 2016-09-12T21:18:12+08:00 ] ::1 /tp/index.php/Home/Detail/getlistone/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (12,100,101,102) )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.8821s ]
+SQL: SELECT * FROM `product_barnd` WHERE ( id in (1,2) )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 16 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\5c3cdcfac9fa569627b582c85c27ccaf.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.521030s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.9671s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=115 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=116 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=117 ) LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=118 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=119 ) LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=120 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=121 ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+SQL: SELECT * FROM `product_img` WHERE ( product_id=122 ) LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\tp\Application\Runtime\Cache\Home\3c31616f6aea6351842525e884ec1d02.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.513087s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.515087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-12T21:18:18+08:00 ] ::1 /tp/index.php/Home/Login/user_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.335019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.336019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:18:18+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:18:47+08:00 ] ::1 /tp/index.php/Home/Login/find
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:08+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.8670387324127047
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-12T21:21:08+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.6181786329806926
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:09+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.8211301474831956
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:09+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.22460375067514393
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:09+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.5944491378687025
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:09+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.9888904227813684
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-12T21:21:09+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg/0.9099633103122344
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:12+08:00 ] ::1 /tp/index.php/Home/Login/find
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-12T21:21:14+08:00 ] ::1 /tp/index.php/Home/Login/vrifyimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:21:15+08:00 ] ::1 /tp/index.php/Home/Login/user_regedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-12T21:22:10+08:00 ] ::1 /tp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:22:31+08:00 ] ::1 /tp/index.php/Home/Detail/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_img` WHERE ( product_id=1 ) LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\0a45018ee228732e169e4a7e31d5edec.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\0a45018ee228732e169e4a7e31d5edec.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:25:03+08:00 ] ::1 /tp/index.php/Home/Login/user_regedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-12T21:33:19+08:00 ] ::1 /tp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:33:32+08:00 ] ::1 /tp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-12T21:33:47+08:00 ] ::1 /tp/index.php/Home/Detail/getlistone/id/851
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 851 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=851 )  [ RunTime:0.0000s ]
+
+[ 2016-09-12T21:33:47+08:00 ] ::1 /tp/index.php/Home/Detail/getlistone/id/852
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 852 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=851 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=852 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 852 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT  `brand_id` FROM `product` WHERE ( cata_id in (852,853) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=851 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product_catalog` WHERE `id` = 852 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id in (852,853) )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_barnd` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: ac E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\wamp\www\tp\Application\Home\Controller\DetailController.class.php 第 46 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `product_barnd` WHERE ( id in () ) 
+
+[ 2016-09-12T21:34:50+08:00 ] ::1 /tp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_catalog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE ( type=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE ( type=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 28 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 38 行.
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( cata_id=100 and recommend=0 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_catalog` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-12T21:34:52+08:00 ] ::1 /tp/index.php/Home/Shopping/cart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 29 行.
+NOTIC: [8] Undefined index: is_login E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 39 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product` WHERE ( id=39 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 63 行.
+NOTIC: [8] Undefined index: id E:\wamp\www\tp\Application\Runtime\Cache\Home\944e4e43aa0bd8b183b9984453325316.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

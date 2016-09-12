@@ -63,16 +63,16 @@
             <li <?php if(CONTROLLER_NAME == 'Productcatalog'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-align-justify"></i> <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?=U('Productcatalog/index')?>">分类展示</a></li>
-                     <li><a href="<?=U('Productcatalog/add')?>">分类添加</a></li>
+                    <li><a href="<?= U('Admin/Productcatalog/index')?>">分类展示</a></li>
+                     <li><a href="<?= U('Admin/Productcatalog/add')?>">分类添加</a></li>
                     
                 </ul>
             </li >
             <li <?php if(CONTROLLER_NAME == 'Product'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-apple"></i> <span class="nav-label">商品管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?=U('Product/index')?>">商品展示</a></li>
-                    <li><a href="<?=U('Product/add')?>">商品添加</a></li>
+                    <li><a href="<?= U('Admin/Product/index')?>">商品展示</a></li>
+                    <li><a href="<?= U('Admin/Product/add')?>">商品添加</a></li>
                   
                     
                 </ul>
@@ -80,12 +80,12 @@
             <li <?php if(CONTROLLER_NAME == 'User'): ?>class="active"<?php endif; ?>>
                 <a><i class="fa fa-group"></i> <span class="nav-label">会员管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<?=U('User/index')?>">用户列表</a></li>
+                    <li><a href="<?= U('Admin/User/index')?>">用户列表</a></li>
                     
                 </ul>
             </li>
             <li <?php if(CONTROLLER_NAME == 'web'): ?>class="active"<?php endif; ?>>
-                <a href="<?=U('Product/index')?>"> <i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
+                <a href="<?= U('Admin/Product/index')?>"> <i class="fa fa-wrench"></i> <span class="nav-label">网站设置</span> </a>
             </li>
          
         </ul>
@@ -106,7 +106,7 @@
         </li>
 
         <li>
-            <a href="<?=U('Admin/AuthLogin/login_out') ?>">
+            <a href="<?= U('Admin/AuthLogin/login_out') ?>">
                 <i class="fa fa-sign-out"></i> 退出
             </a>
         </li>
@@ -159,6 +159,7 @@
                                     <th>用户</th>
                                     <th>配送地址</th>
                                     <th>下单时间</th>
+                                    <th>总金额</th>
                                     <th>状态</th>
                                  
                                     
@@ -173,6 +174,7 @@
                                 	     
                                      <td><?php echo ($p["address_address"]); ?></td>
                                      <td><?php echo ($p["create_time"]); ?></td>
+                                     <td><?php echo ($p["num"]); ?></td>
                                 	 <td><?php echo ($p["staut"]); ?></td>
                                 	  
                                 	
