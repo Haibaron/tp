@@ -108,16 +108,33 @@ class ShoppingController extends Controller {
 	}
 	public function pay_order(){
 		session('returnurl',U('Home/Shopping/pay_ordel'));
-		if(session('userid')){
-		$data=session('data');
-		//var_dump($data);
 		
-		$addr=M('user_address')->where('user_id='.session('userid'))->select();
-		$this->assign('carts',$data);
-		$this->assign('addr',$addr);
-	}else{
-		$this->error('请登录账号',U('Home/Login/user_login'));
-	}
+		
+			//M('Order')->add($da);
+			$addr=M('user_address')->where('user_id='.session('userid'))->select();
+			if(session('userid')){
+
+				  if(I('post.')){
+				  	  $data=session('data');
+	                  $data.=I('post.product_id');
+	                  $this->assign('carts',$data);
+					  $this->assign('addr',$addr);
+					  	var_dump($data);
+	              }else{
+	              	 $data=session('data');
+	             	//var_dump($data);
+					$this->assign('carts',$data);
+					$this->assign('addr',$addr);
+	              }
+				
+			}
+
+
+			else{
+				$this->error('请登录账号',U('Home/Login/user_login'));
+			}
+		
+		
 		$this->display();
 	
 	}

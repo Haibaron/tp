@@ -78,6 +78,7 @@
 		<br />
 		<div class="row">
 			<div class="col-md-8">
+			<form method="post" action="<?php echo U('Home/Shopping/pay_order');?>">
 				<div  id="hot_sale">
 				<?php foreach($products as $p){?>
 				<div class="item clearfix">
@@ -87,10 +88,16 @@
 					<div class="price">
 						¥<?php echo number_format($p['price'],2)?>
 					</div>
-					<a href="#" class="btn btn-danger buy_now">立即抢购</a>
+					<button class="btn btn-danger buy_now" >立即抢购</button>
 				</div>
 				<?php }?>
 			</div>
+			<input type="hidden" name="img" value="<?= $p['img']?>">
+			<input type="hidden" name="title" value="<?= $p['title']?>">
+			<input type="hidden" name="price" value="<?= $p['price']?>">
+			<input type="hidden" name="product_id" value="<?= $p['id']?>">
+			
+			</form>
 			</div>
 			<div class="col-md-4">
 				<div style="background:url('http://placehold.it/293x170?text=广告位1') no-repeat;background-size:100% 100%;height:170px;width:100%;"></div>
@@ -199,7 +206,32 @@
     			nextText: '<i class="glyphicon glyphicon-menu-right"></i>', 
 	        });
 	    });
+
+
+	    $('#checkout').click(function(){
+		 var data=[];
+       $('.is_select').each(function(i,item){       
+              if($(item).prop('checked')){
+					var element={
+		             		'num':$(item).parents('.cartid').find('.inp').val(),
+		             		'product_id':$(item).parents('.cartid').find('.product_id').val()
+             	                }
+					 data.push(element);     
+                  }
+       });
+       		   
+       		  	  $.post("<?=U("Shopping/order")?>",{"data":data},function(data){
+       		  	  	 console.log(data);
+       		  	  	  if(data=='ok'){
+       		  	  	  window.location.href="<?=U('shopping/pay_order')?>"
+       		  	  }
+       		  	  });
+       		  	  	
+            
+	});
     </script>
+
+
 
 </body>
 </html>
